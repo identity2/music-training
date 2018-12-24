@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aD2-1G-yGh">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="tCv-a1-l9T">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="aD2-1G-yGh" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wJv-4e-zTG">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Bmw-BK-Kxd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vyJ-pv-Cyx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-412" y="-611"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="MusicTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQU-45-Jrp">
+                                <rect key="frame" x="20.666666666666657" y="191.66666666666666" width="372.66666666666674" height="372.66666666666674"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mll-tN-YAn" userLabel="Sight Reading">
+                                        <rect key="frame" x="0.0" y="0.0" width="167.66666666666666" height="167.66666666666666"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="mll-tN-YAn" secondAttribute="height" multiplier="1:1" id="3Bc-BH-UJA"/>
+                                        </constraints>
+                                        <state key="normal" image="sight_reading_picker"/>
+                                        <connections>
+                                            <segue destination="Ncr-JZ-hcc" kind="show" id="CWV-mT-TcD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMN-Io-h2O" userLabel="Sight Singing">
+                                        <rect key="frame" x="205" y="0.0" width="167.66666666666663" height="167.66666666666666"/>
+                                        <state key="normal" image="sight_singing_picker"/>
+                                        <connections>
+                                            <segue destination="i5S-EG-D66" kind="show" identifier="SightSingingToMenu" id="iaY-vb-fwH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cB-A4-nBa" userLabel="Interval">
+                                        <rect key="frame" x="0.0" y="205.00000000000006" width="167.66666666666666" height="167.66666666666669"/>
+                                        <state key="normal" image="interval_picker"/>
+                                        <connections>
+                                            <segue destination="ezV-PI-9mr" kind="show" identifier="IntervalToMenu" id="KMn-gP-Kp1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qP3-Zx-Mov" userLabel="Chord Progression">
+                                        <rect key="frame" x="205" y="205.00000000000006" width="167.66666666666663" height="167.66666666666669"/>
+                                        <state key="normal" image="chord_progression_picker"/>
+                                        <connections>
+                                            <segue destination="e56-Fo-vtM" kind="show" identifier="ChordProgressionToMenu" id="3nQ-lZ-uXv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="mMN-Io-h2O" secondAttribute="trailing" id="5dW-oy-yDD"/>
+                                    <constraint firstItem="5cB-A4-nBa" firstAttribute="width" secondItem="mll-tN-YAn" secondAttribute="width" id="5lD-uV-LId"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="5uO-yU-PwQ"/>
+                                    <constraint firstItem="qP3-Zx-Mov" firstAttribute="height" secondItem="mll-tN-YAn" secondAttribute="height" id="86i-lK-5dK"/>
+                                    <constraint firstItem="mll-tN-YAn" firstAttribute="top" secondItem="DQU-45-Jrp" secondAttribute="top" id="APD-ge-AOz"/>
+                                    <constraint firstItem="5cB-A4-nBa" firstAttribute="centerX" secondItem="mll-tN-YAn" secondAttribute="centerX" id="D0S-XO-CCV"/>
+                                    <constraint firstItem="mMN-Io-h2O" firstAttribute="centerY" secondItem="mll-tN-YAn" secondAttribute="centerY" id="H9b-ce-QZI"/>
+                                    <constraint firstItem="mll-tN-YAn" firstAttribute="width" secondItem="DQU-45-Jrp" secondAttribute="width" multiplier="0.45" id="HEQ-VJ-d54"/>
+                                    <constraint firstItem="mMN-Io-h2O" firstAttribute="height" secondItem="mll-tN-YAn" secondAttribute="height" id="Ikd-jo-a2X"/>
+                                    <constraint firstItem="mll-tN-YAn" firstAttribute="leading" secondItem="DQU-45-Jrp" secondAttribute="leading" id="JgN-C0-Q4C"/>
+                                    <constraint firstItem="qP3-Zx-Mov" firstAttribute="width" secondItem="mll-tN-YAn" secondAttribute="width" id="SFH-L4-TIL"/>
+                                    <constraint firstAttribute="width" secondItem="DQU-45-Jrp" secondAttribute="height" multiplier="1:1" id="TfX-0p-gtR"/>
+                                    <constraint firstItem="5cB-A4-nBa" firstAttribute="height" secondItem="mll-tN-YAn" secondAttribute="height" id="WGs-o9-HlC"/>
+                                    <constraint firstAttribute="bottom" secondItem="5cB-A4-nBa" secondAttribute="bottom" id="WOo-yK-3DS"/>
+                                    <constraint firstItem="qP3-Zx-Mov" firstAttribute="centerY" secondItem="5cB-A4-nBa" secondAttribute="centerY" id="cCm-m7-1fg"/>
+                                    <constraint firstItem="qP3-Zx-Mov" firstAttribute="centerX" secondItem="mMN-Io-h2O" secondAttribute="centerX" id="dl4-D7-twl"/>
+                                    <constraint firstItem="mMN-Io-h2O" firstAttribute="width" secondItem="mll-tN-YAn" secondAttribute="width" id="igS-rM-S0b"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DQU-45-Jrp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OAj-uD-dMs"/>
+                            <constraint firstItem="DQU-45-Jrp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" priority="999" id="hdg-9I-q4R"/>
+                            <constraint firstItem="DQU-45-Jrp" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="v9H-l5-YWB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pdP-30-wv3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="613" y="-589"/>
+        </scene>
+        <!--Sight Singing View Controller-->
+        <scene sceneID="7pJ-zk-gCq">
+            <objects>
+                <viewController id="i5S-EG-D66" customClass="SightSingingViewController" customModule="MusicTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Sw-wr-8VB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCw-4e-eaN">
+                                <rect key="frame" x="9.9999999999999964" y="30" width="51.666666666666657" height="51.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="70" id="CQh-eb-Qf8"/>
+                                    <constraint firstAttribute="width" secondItem="fCw-4e-eaN" secondAttribute="height" multiplier="1:1" id="SXS-80-Mkf"/>
+                                </constraints>
+                                <state key="normal" image="Arrow"/>
+                                <connections>
+                                    <segue destination="QhO-7C-Dkc" kind="unwind" unwindAction="unwindToMenuWithUnwindSegue:" id="784-sp-3jA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fCw-4e-eaN" firstAttribute="width" secondItem="5Sw-wr-8VB" secondAttribute="width" multiplier="0.125" priority="999" id="Gqm-Wa-n1z"/>
+                            <constraint firstItem="RoK-2u-WOT" firstAttribute="top" secondItem="fCw-4e-eaN" secondAttribute="top" constant="-10" id="aSW-ac-5uz"/>
+                            <constraint firstItem="RoK-2u-WOT" firstAttribute="leading" secondItem="fCw-4e-eaN" secondAttribute="leading" constant="-10" id="xFx-qW-Tw6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RoK-2u-WOT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E5c-m8-LBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="QhO-7C-Dkc" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2403" y="-1105"/>
+        </scene>
+        <!--Interval View Controller-->
+        <scene sceneID="uAS-Av-Fak">
+            <objects>
+                <viewController id="ezV-PI-9mr" customClass="IntervalViewController" customModule="MusicTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZOZ-ap-WKe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvW-LX-XFA">
+                                <rect key="frame" x="10" y="30" width="62" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="70" id="K3z-fy-0V4"/>
+                                    <constraint firstAttribute="width" secondItem="zvW-LX-XFA" secondAttribute="height" multiplier="1:1" id="bpN-Gx-DfD"/>
+                                </constraints>
+                                <state key="normal" image="Arrow"/>
+                                <connections>
+                                    <segue destination="mUG-qI-VGU" kind="unwind" unwindAction="unwindToMenuWithUnwindSegue:" id="DqN-LD-14f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zvW-LX-XFA" firstAttribute="width" secondItem="ZOZ-ap-WKe" secondAttribute="width" multiplier="0.15" id="Shl-P6-ulJ"/>
+                            <constraint firstItem="xay-tj-fzp" firstAttribute="top" secondItem="zvW-LX-XFA" secondAttribute="top" constant="-10" id="cwN-fe-Ozi"/>
+                            <constraint firstItem="xay-tj-fzp" firstAttribute="leading" secondItem="zvW-LX-XFA" secondAttribute="leading" constant="-10" id="lGY-L9-PAY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xay-tj-fzp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="64h-a9-ZhK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="mUG-qI-VGU" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1567" y="-285"/>
+        </scene>
+        <!--Chord Progression View Controller-->
+        <scene sceneID="YRa-3p-10p">
+            <objects>
+                <viewController id="e56-Fo-vtM" customClass="ChordProgressionViewController" customModule="MusicTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YC4-Oq-8cL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pM6-5D-v8Z">
+                                <rect key="frame" x="10" y="30" width="62" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="70" id="CDe-a5-IMZ"/>
+                                    <constraint firstAttribute="width" secondItem="pM6-5D-v8Z" secondAttribute="height" multiplier="1:1" id="dLb-qr-YDO"/>
+                                </constraints>
+                                <state key="normal" image="Arrow"/>
+                                <connections>
+                                    <segue destination="cpe-sQ-NAs" kind="unwind" unwindAction="unwindToMenuWithUnwindSegue:" id="N5T-cj-K3d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ovu-oU-jZ1" firstAttribute="top" secondItem="pM6-5D-v8Z" secondAttribute="top" constant="-10" id="C1A-w1-I5M"/>
+                            <constraint firstItem="pM6-5D-v8Z" firstAttribute="width" secondItem="YC4-Oq-8cL" secondAttribute="width" multiplier="0.15" priority="999" id="H5h-8j-JLO"/>
+                            <constraint firstItem="ovu-oU-jZ1" firstAttribute="leading" secondItem="pM6-5D-v8Z" secondAttribute="leading" constant="-10" id="KiV-90-pjy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ovu-oU-jZ1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W1Z-6T-sM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="cpe-sQ-NAs" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2403" y="-285"/>
+        </scene>
+        <!--Sight Reading View Controller-->
+        <scene sceneID="5qr-0o-6rf">
+            <objects>
+                <viewController id="Ncr-JZ-hcc" customClass="SightReadingViewController" customModule="MusicTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uRj-42-6PK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rb-mp-53L" userLabel="Back">
+                                <rect key="frame" x="9.9999999999999964" y="29.999999999999996" width="51.666666666666657" height="51.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="70" id="cJe-6x-6sk"/>
+                                    <constraint firstAttribute="width" secondItem="1rb-mp-53L" secondAttribute="height" multiplier="1:1" id="pNY-iS-N3r"/>
+                                </constraints>
+                                <state key="normal" image="Arrow"/>
+                                <connections>
+                                    <segue destination="EbM-0A-HAL" kind="unwind" unwindAction="unwindToMenuWithUnwindSegue:" id="PeP-He-1uN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1rb-mp-53L" firstAttribute="leading" secondItem="RrE-b5-X3t" secondAttribute="leading" constant="10" id="6Rp-tf-Q4u"/>
+                            <constraint firstItem="1rb-mp-53L" firstAttribute="top" secondItem="RrE-b5-X3t" secondAttribute="top" constant="10" id="nlO-Cy-Jk3"/>
+                            <constraint firstItem="1rb-mp-53L" firstAttribute="width" secondItem="uRj-42-6PK" secondAttribute="width" multiplier="0.125" priority="999" id="srB-i3-RTg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RrE-b5-X3t"/>
+                    </view>
+                    <connections>
+                        <segue destination="EbM-0A-HAL" kind="unwind" identifier="SightReadingToMenu" unwindAction="unwindToMenuWithUnwindSegue:" id="90m-ij-TOt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AHe-xD-IU7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="EbM-0A-HAL" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1568" y="-1104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Arrow" width="512" height="512"/>
+        <image name="chord_progression_picker" width="1024" height="1024"/>
+        <image name="interval_picker" width="1024" height="1024"/>
+        <image name="sight_reading_picker" width="1024" height="1024"/>
+        <image name="sight_singing_picker" width="1024" height="1024"/>
+    </resources>
+</document>

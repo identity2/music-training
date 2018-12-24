@@ -1,0 +1,14 @@
+build/
+DerivedData/
+
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+.build/
+Pods/
