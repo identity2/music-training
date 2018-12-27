@@ -12,12 +12,26 @@
 		D934016421CE0D5900F0D3C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D934016221CE0D5900F0D3C4 /* Main.storyboard */; };
 		D934016621CE0D5A00F0D3C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D934016521CE0D5A00F0D3C4 /* Assets.xcassets */; };
 		D934016921CE0D5A00F0D3C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D934016721CE0D5A00F0D3C4 /* LaunchScreen.storyboard */; };
+		D97B4A4321D4D1AD0025BE75 /* NoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B4A4221D4D1AD0025BE75 /* NoteImageView.swift */; };
+		D97B4A4621D4D1F80025BE75 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B4A4521D4D1F80025BE75 /* Note.swift */; };
+		D97B4A4821D4D7250025BE75 /* NoteGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B4A4721D4D7250025BE75 /* NoteGenerator.swift */; };
+		D97B4A5C21D4F1380025BE75 /* NoteGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B4A5B21D4F1380025BE75 /* NoteGeneratorTests.swift */; };
 		D9D9154F21D1408C0087BC13 /* SightReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9154E21D1408C0087BC13 /* SightReadingViewController.swift */; };
 		D9D9155121D143410087BC13 /* SightSingingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9155021D143410087BC13 /* SightSingingViewController.swift */; };
 		D9D9155321D143720087BC13 /* IntervalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9155221D143720087BC13 /* IntervalViewController.swift */; };
 		D9D9155521D1438D0087BC13 /* ChordProgressionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9155421D1438D0087BC13 /* ChordProgressionViewController.swift */; };
 		D9D9155721D147730087BC13 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9155621D147730087BC13 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D97B4A5621D4F1170025BE75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D934015321CE0D5800F0D3C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D934015A21CE0D5900F0D3C4;
+			remoteInfo = MusicTraining;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5924A5350CA62AA36EFC43CE /* Pods-MusicTraining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicTraining.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicTraining/Pods-MusicTraining.debug.xcconfig"; sourceTree = "<group>"; };
@@ -29,6 +43,12 @@
 		D934016521CE0D5A00F0D3C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D934016821CE0D5A00F0D3C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D934016A21CE0D5A00F0D3C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D97B4A4221D4D1AD0025BE75 /* NoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteImageView.swift; sourceTree = "<group>"; };
+		D97B4A4521D4D1F80025BE75 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		D97B4A4721D4D7250025BE75 /* NoteGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteGenerator.swift; sourceTree = "<group>"; };
+		D97B4A5121D4F1170025BE75 /* MusicTrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicTrainingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D97B4A5521D4F1170025BE75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D97B4A5B21D4F1380025BE75 /* NoteGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteGeneratorTests.swift; sourceTree = "<group>"; };
 		D9D9154E21D1408C0087BC13 /* SightReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightReadingViewController.swift; sourceTree = "<group>"; };
 		D9D9155021D143410087BC13 /* SightSingingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightSingingViewController.swift; sourceTree = "<group>"; };
 		D9D9155221D143720087BC13 /* IntervalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +62,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				68728513A2EA9856B183AA0E /* Pods_MusicTraining.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D97B4A4E21D4F1170025BE75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				D934015D21CE0D5900F0D3C4 /* MusicTraining */,
+				D97B4A5221D4F1170025BE75 /* MusicTrainingTests */,
 				D934015C21CE0D5900F0D3C4 /* Products */,
 				761086E4D20565EFDD575ED2 /* Pods */,
 				EF5D667C844601FDEF2FE9FC /* Frameworks */,
@@ -71,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				D934015B21CE0D5900F0D3C4 /* MusicTraining.app */,
+				D97B4A5121D4F1170025BE75 /* MusicTrainingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,14 +107,34 @@
 		D934015D21CE0D5900F0D3C4 /* MusicTraining */ = {
 			isa = PBXGroup;
 			children = (
+				D97B4A4421D4D1EA0025BE75 /* Models */,
 				D9D9154D21D1402A0087BC13 /* View Controllers */,
 				D934015E21CE0D5900F0D3C4 /* AppDelegate.swift */,
 				D934016221CE0D5900F0D3C4 /* Main.storyboard */,
 				D934016521CE0D5A00F0D3C4 /* Assets.xcassets */,
 				D934016721CE0D5A00F0D3C4 /* LaunchScreen.storyboard */,
 				D934016A21CE0D5A00F0D3C4 /* Info.plist */,
+				D97B4A4221D4D1AD0025BE75 /* NoteImageView.swift */,
 			);
 			path = MusicTraining;
+			sourceTree = "<group>";
+		};
+		D97B4A4421D4D1EA0025BE75 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D97B4A4521D4D1F80025BE75 /* Note.swift */,
+				D97B4A4721D4D7250025BE75 /* NoteGenerator.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D97B4A5221D4F1170025BE75 /* MusicTrainingTests */ = {
+			isa = PBXGroup;
+			children = (
+				D97B4A5B21D4F1380025BE75 /* NoteGeneratorTests.swift */,
+				D97B4A5521D4F1170025BE75 /* Info.plist */,
+			);
+			path = MusicTrainingTests;
 			sourceTree = "<group>";
 		};
 		D9D9154D21D1402A0087BC13 /* View Controllers */ = {
@@ -129,6 +178,24 @@
 			productReference = D934015B21CE0D5900F0D3C4 /* MusicTraining.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D97B4A5021D4F1170025BE75 /* MusicTrainingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D97B4A5821D4F1170025BE75 /* Build configuration list for PBXNativeTarget "MusicTrainingTests" */;
+			buildPhases = (
+				D97B4A4D21D4F1170025BE75 /* Sources */,
+				D97B4A4E21D4F1170025BE75 /* Frameworks */,
+				D97B4A4F21D4F1170025BE75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D97B4A5721D4F1170025BE75 /* PBXTargetDependency */,
+			);
+			name = MusicTrainingTests;
+			productName = MusicTrainingTests;
+			productReference = D97B4A5121D4F1170025BE75 /* MusicTrainingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -141,6 +208,10 @@
 				TargetAttributes = {
 					D934015A21CE0D5900F0D3C4 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					D97B4A5021D4F1170025BE75 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D934015A21CE0D5900F0D3C4;
 					};
 				};
 			};
@@ -158,6 +229,7 @@
 			projectRoot = "";
 			targets = (
 				D934015A21CE0D5900F0D3C4 /* MusicTraining */,
+				D97B4A5021D4F1170025BE75 /* MusicTrainingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -170,6 +242,13 @@
 				D934016921CE0D5A00F0D3C4 /* LaunchScreen.storyboard in Resources */,
 				D934016621CE0D5A00F0D3C4 /* Assets.xcassets in Resources */,
 				D934016421CE0D5900F0D3C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D97B4A4F21D4F1170025BE75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,13 +283,32 @@
 				D9D9154F21D1408C0087BC13 /* SightReadingViewController.swift in Sources */,
 				D9D9155721D147730087BC13 /* MenuViewController.swift in Sources */,
 				D9D9155521D1438D0087BC13 /* ChordProgressionViewController.swift in Sources */,
+				D97B4A4621D4D1F80025BE75 /* Note.swift in Sources */,
+				D97B4A4321D4D1AD0025BE75 /* NoteImageView.swift in Sources */,
 				D934015F21CE0D5900F0D3C4 /* AppDelegate.swift in Sources */,
+				D97B4A4821D4D7250025BE75 /* NoteGenerator.swift in Sources */,
 				D9D9155121D143410087BC13 /* SightSingingViewController.swift in Sources */,
 				D9D9155321D143720087BC13 /* IntervalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D97B4A4D21D4F1170025BE75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97B4A5C21D4F1380025BE75 /* NoteGeneratorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D97B4A5721D4F1170025BE75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D934015A21CE0D5900F0D3C4 /* MusicTraining */;
+			targetProxy = D97B4A5621D4F1170025BE75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D934016221CE0D5900F0D3C4 /* Main.storyboard */ = {
@@ -386,6 +484,46 @@
 			};
 			name = Release;
 		};
+		D97B4A5921D4F1170025BE75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YUWPSE2UN9;
+				INFOPLIST_FILE = MusicTrainingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shinerightstudio.MusicTrainingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicTraining.app/MusicTraining";
+			};
+			name = Debug;
+		};
+		D97B4A5A21D4F1170025BE75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YUWPSE2UN9;
+				INFOPLIST_FILE = MusicTrainingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shinerightstudio.MusicTrainingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicTraining.app/MusicTraining";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -403,6 +541,15 @@
 			buildConfigurations = (
 				D934016E21CE0D5A00F0D3C4 /* Debug */,
 				D934016F21CE0D5A00F0D3C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D97B4A5821D4F1170025BE75 /* Build configuration list for PBXNativeTarget "MusicTrainingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D97B4A5921D4F1170025BE75 /* Debug */,
+				D97B4A5A21D4F1170025BE75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

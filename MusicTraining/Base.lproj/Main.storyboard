@@ -115,7 +115,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCw-4e-eaN">
-                                <rect key="frame" x="9.9999999999999964" y="30" width="51.666666666666657" height="51.666666666666657"/>
+                                <rect key="frame" x="9.9999999999999964" y="29.999999999999996" width="51.666666666666657" height="51.666666666666657"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="70" id="CQh-eb-Qf8"/>
                                     <constraint firstAttribute="width" secondItem="fCw-4e-eaN" secondAttribute="height" multiplier="1:1" id="SXS-80-Mkf"/>
@@ -138,7 +138,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E5c-m8-LBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="QhO-7C-Dkc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2403" y="-1105"/>
+            <point key="canvasLocation" x="2402.898550724638" y="-1105.4347826086957"/>
         </scene>
         <!--Interval View Controller-->
         <scene sceneID="uAS-Av-Fak">
@@ -227,6 +227,15 @@
                                     <segue destination="EbM-0A-HAL" kind="unwind" unwindAction="unwindToMenuWithUnwindSegue:" id="PeP-He-1uN"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cCs-fQ-cjj">
+                                <rect key="frame" x="87" y="304" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iOG-dO-8i0">
+                                <rect key="frame" x="87" y="124" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
