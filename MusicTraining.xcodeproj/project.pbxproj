@@ -12,10 +12,12 @@
 		D934016421CE0D5900F0D3C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D934016221CE0D5900F0D3C4 /* Main.storyboard */; };
 		D934016621CE0D5A00F0D3C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D934016521CE0D5A00F0D3C4 /* Assets.xcassets */; };
 		D934016921CE0D5A00F0D3C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D934016721CE0D5A00F0D3C4 /* LaunchScreen.storyboard */; };
+		D9759F5B21DB789900D7412E /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9759F5A21DB789900D7412E /* SoundPlayer.swift */; };
 		D97B4A4321D4D1AD0025BE75 /* NoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B4A4221D4D1AD0025BE75 /* NoteImageView.swift */; };
 		D97B4A4621D4D1F80025BE75 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B4A4521D4D1F80025BE75 /* Note.swift */; };
 		D97B4A4821D4D7250025BE75 /* NoteGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B4A4721D4D7250025BE75 /* NoteGenerator.swift */; };
 		D97B4A5C21D4F1380025BE75 /* NoteGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B4A5B21D4F1380025BE75 /* NoteGeneratorTests.swift */; };
+		D97DE1C021DB2A060081CABE /* SightReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97DE1BF21DB2A060081CABE /* SightReading.swift */; };
 		D9D9154F21D1408C0087BC13 /* SightReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9154E21D1408C0087BC13 /* SightReadingViewController.swift */; };
 		D9D9155121D143410087BC13 /* SightSingingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9155021D143410087BC13 /* SightSingingViewController.swift */; };
 		D9D9155321D143720087BC13 /* IntervalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9155221D143720087BC13 /* IntervalViewController.swift */; };
@@ -43,12 +45,14 @@
 		D934016521CE0D5A00F0D3C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D934016821CE0D5A00F0D3C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D934016A21CE0D5A00F0D3C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9759F5A21DB789900D7412E /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		D97B4A4221D4D1AD0025BE75 /* NoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteImageView.swift; sourceTree = "<group>"; };
 		D97B4A4521D4D1F80025BE75 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		D97B4A4721D4D7250025BE75 /* NoteGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteGenerator.swift; sourceTree = "<group>"; };
 		D97B4A5121D4F1170025BE75 /* MusicTrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicTrainingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97B4A5521D4F1170025BE75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D97B4A5B21D4F1380025BE75 /* NoteGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteGeneratorTests.swift; sourceTree = "<group>"; };
+		D97DE1BF21DB2A060081CABE /* SightReading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightReading.swift; sourceTree = "<group>"; };
 		D9D9154E21D1408C0087BC13 /* SightReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightReadingViewController.swift; sourceTree = "<group>"; };
 		D9D9155021D143410087BC13 /* SightSingingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightSingingViewController.swift; sourceTree = "<group>"; };
 		D9D9155221D143720087BC13 /* IntervalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 		D934015D21CE0D5900F0D3C4 /* MusicTraining */ = {
 			isa = PBXGroup;
 			children = (
+				D9759F5921DB788900D7412E /* Utils */,
 				D97B4A4421D4D1EA0025BE75 /* Models */,
 				D9D9154D21D1402A0087BC13 /* View Controllers */,
 				D934015E21CE0D5900F0D3C4 /* AppDelegate.swift */,
@@ -119,11 +124,20 @@
 			path = MusicTraining;
 			sourceTree = "<group>";
 		};
+		D9759F5921DB788900D7412E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D9759F5A21DB789900D7412E /* SoundPlayer.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		D97B4A4421D4D1EA0025BE75 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				D97B4A4521D4D1F80025BE75 /* Note.swift */,
 				D97B4A4721D4D7250025BE75 /* NoteGenerator.swift */,
+				D97DE1BF21DB2A060081CABE /* SightReading.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,10 +296,12 @@
 			files = (
 				D9D9154F21D1408C0087BC13 /* SightReadingViewController.swift in Sources */,
 				D9D9155721D147730087BC13 /* MenuViewController.swift in Sources */,
+				D9759F5B21DB789900D7412E /* SoundPlayer.swift in Sources */,
 				D9D9155521D1438D0087BC13 /* ChordProgressionViewController.swift in Sources */,
 				D97B4A4621D4D1F80025BE75 /* Note.swift in Sources */,
 				D97B4A4321D4D1AD0025BE75 /* NoteImageView.swift in Sources */,
 				D934015F21CE0D5900F0D3C4 /* AppDelegate.swift in Sources */,
+				D97DE1C021DB2A060081CABE /* SightReading.swift in Sources */,
 				D97B4A4821D4D7250025BE75 /* NoteGenerator.swift in Sources */,
 				D9D9155121D143410087BC13 /* SightSingingViewController.swift in Sources */,
 				D9D9155321D143720087BC13 /* IntervalViewController.swift in Sources */,
