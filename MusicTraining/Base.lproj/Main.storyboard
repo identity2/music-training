@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aD2-1G-yGh">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -36,10 +36,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQU-45-Jrp">
-                                <rect key="frame" x="20.5" y="266.5" width="373" height="373"/>
+                                <rect key="frame" x="20.666666666666657" y="266.66666666666663" width="372.66666666666674" height="372.66666666666663"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mll-tN-YAn" userLabel="Sight Reading">
-                                        <rect key="frame" x="0.0" y="0.0" width="168" height="168"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="167.66666666666666" height="167.66666666666666"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="mll-tN-YAn" secondAttribute="height" multiplier="1:1" id="3Bc-BH-UJA"/>
                                         </constraints>
@@ -49,21 +49,21 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMN-Io-h2O" userLabel="Sight Singing">
-                                        <rect key="frame" x="205" y="0.0" width="168" height="168"/>
+                                        <rect key="frame" x="205" y="0.0" width="167.66666666666663" height="167.66666666666666"/>
                                         <state key="normal" image="sight_singing_picker"/>
                                         <connections>
                                             <segue destination="i5S-EG-D66" kind="show" identifier="SightSingingToMenu" id="iaY-vb-fwH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cB-A4-nBa" userLabel="Interval">
-                                        <rect key="frame" x="0.0" y="205" width="168" height="168"/>
+                                        <rect key="frame" x="0.0" y="205" width="167.66666666666666" height="167.66666666666663"/>
                                         <state key="normal" image="interval_picker"/>
                                         <connections>
                                             <segue destination="ezV-PI-9mr" kind="show" identifier="IntervalToMenu" id="KMn-gP-Kp1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qP3-Zx-Mov" userLabel="Chord Progression">
-                                        <rect key="frame" x="205" y="205" width="168" height="168"/>
+                                        <rect key="frame" x="205" y="205" width="167.66666666666663" height="167.66666666666663"/>
                                         <state key="normal" image="chord_progression_picker"/>
                                         <connections>
                                             <segue destination="e56-Fo-vtM" kind="show" identifier="ChordProgressionToMenu" id="3nQ-lZ-uXv"/>
@@ -115,7 +115,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCw-4e-eaN">
-                                <rect key="frame" x="10" y="54" width="52" height="52"/>
+                                <rect key="frame" x="9.9999999999999964" y="54" width="51.666666666666657" height="51.666666666666657"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="70" id="CQh-eb-Qf8"/>
                                     <constraint firstAttribute="width" secondItem="fCw-4e-eaN" secondAttribute="height" multiplier="1:1" id="SXS-80-Mkf"/>
@@ -159,12 +159,41 @@
                                     <segue destination="mUG-qI-VGU" kind="unwind" unwindAction="unwindToMenuWithUnwindSegue:" id="DqN-LD-14f"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0p-AU-oJv">
+                                <rect key="frame" x="332" y="54" width="62" height="62"/>
+                                <state key="normal" image="Reset"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100% correctness" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMK-Dw-7jK">
+                                <rect key="frame" x="82.666666666666671" y="54" width="248.66666666666663" height="62"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8Q-kB-4ln">
+                                <rect key="frame" x="145" y="232.33333333333334" width="124" height="124.33333333333334"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="c8Q-kB-4ln" secondAttribute="height" multiplier="1:1" id="0jL-pX-EsP"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="175" id="GZj-DE-H19"/>
+                                </constraints>
+                                <state key="normal" image="speaker"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="MMK-Dw-7jK" firstAttribute="width" secondItem="ZOZ-ap-WKe" secondAttribute="width" multiplier="0.6" id="3AQ-Kb-YxV"/>
+                            <constraint firstItem="MMK-Dw-7jK" firstAttribute="centerX" secondItem="xay-tj-fzp" secondAttribute="centerX" id="A5o-YY-HhP"/>
+                            <constraint firstItem="C0p-AU-oJv" firstAttribute="trailing" secondItem="xay-tj-fzp" secondAttribute="trailing" constant="-20" id="Bl7-X5-6Uz"/>
+                            <constraint firstItem="C0p-AU-oJv" firstAttribute="height" secondItem="zvW-LX-XFA" secondAttribute="height" id="HH6-BG-vXg"/>
+                            <constraint firstItem="c8Q-kB-4ln" firstAttribute="centerY" secondItem="xay-tj-fzp" secondAttribute="centerY" multiplier="0.65" id="IkW-a9-4NH"/>
+                            <constraint firstItem="c8Q-kB-4ln" firstAttribute="centerX" secondItem="xay-tj-fzp" secondAttribute="centerX" id="N0l-aQ-z4S"/>
+                            <constraint firstItem="c8Q-kB-4ln" firstAttribute="width" secondItem="ZOZ-ap-WKe" secondAttribute="width" multiplier="0.3" priority="999" id="POV-m2-ofO"/>
+                            <constraint firstItem="MMK-Dw-7jK" firstAttribute="centerY" secondItem="zvW-LX-XFA" secondAttribute="centerY" id="S0c-Qi-5Hd"/>
                             <constraint firstItem="zvW-LX-XFA" firstAttribute="width" secondItem="ZOZ-ap-WKe" secondAttribute="width" multiplier="0.15" priority="999" id="Shl-P6-ulJ"/>
+                            <constraint firstItem="MMK-Dw-7jK" firstAttribute="height" secondItem="zvW-LX-XFA" secondAttribute="height" id="axq-1m-m3q"/>
                             <constraint firstItem="xay-tj-fzp" firstAttribute="top" secondItem="zvW-LX-XFA" secondAttribute="top" constant="-10" id="cwN-fe-Ozi"/>
+                            <constraint firstItem="C0p-AU-oJv" firstAttribute="width" secondItem="zvW-LX-XFA" secondAttribute="width" id="jrN-Nm-Ghx"/>
                             <constraint firstItem="xay-tj-fzp" firstAttribute="leading" secondItem="zvW-LX-XFA" secondAttribute="leading" constant="-10" id="lGY-L9-PAY"/>
+                            <constraint firstItem="C0p-AU-oJv" firstAttribute="centerY" secondItem="zvW-LX-XFA" secondAttribute="centerY" id="rfM-wk-t9Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xay-tj-fzp"/>
                     </view>
@@ -217,7 +246,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rb-mp-53L" userLabel="Back">
-                                <rect key="frame" x="10" y="54" width="52" height="52"/>
+                                <rect key="frame" x="9.9999999999999964" y="54" width="51.666666666666657" height="51.666666666666657"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="70" id="cJe-6x-6sk"/>
                                     <constraint firstAttribute="width" secondItem="1rb-mp-53L" secondAttribute="height" multiplier="1:1" id="pNY-iS-N3r"/>
@@ -228,10 +257,10 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="bL8-cW-438" userLabel="Top">
-                                <rect key="frame" x="41.5" y="484" width="331" height="74"/>
+                                <rect key="frame" x="41.333333333333371" y="484.00000000000006" width="331.33333333333326" height="73.666666666666686"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2K-IU-1Sk" userLabel="C">
-                                        <rect key="frame" x="0.0" y="0.0" width="73.5" height="74"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="73.666666666666671"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="T2K-IU-1Sk" secondAttribute="height" multiplier="1:1" id="nig-Sb-FCj"/>
                                         </constraints>
@@ -242,7 +271,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lej-Fe-9k3" userLabel="D">
-                                        <rect key="frame" x="86" y="0.0" width="73.5" height="74"/>
+                                        <rect key="frame" x="86" y="0.0" width="73.666666666666686" height="73.666666666666671"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="lej-Fe-9k3" secondAttribute="height" multiplier="1:1" id="NdW-Sp-zxg"/>
                                         </constraints>
@@ -253,7 +282,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwT-k5-FhY" userLabel="E">
-                                        <rect key="frame" x="171.5" y="0.0" width="73.5" height="74"/>
+                                        <rect key="frame" x="171.66666666666666" y="0.0" width="73.666666666666657" height="73.666666666666671"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="WwT-k5-FhY" secondAttribute="height" multiplier="1:1" id="0iM-Js-ggO"/>
                                         </constraints>
@@ -264,7 +293,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aS-cs-3ms" userLabel="F">
-                                        <rect key="frame" x="257.5" y="0.0" width="73.5" height="74"/>
+                                        <rect key="frame" x="257.66666666666669" y="0.0" width="73.666666666666686" height="73.666666666666671"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="5aS-cs-3ms" secondAttribute="height" multiplier="1:1" id="VhH-Og-1iG"/>
                                         </constraints>
@@ -281,17 +310,17 @@
                                 </constraints>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="treble_0" translatesAutoresizingMaskIntoConstraints="NO" id="iOG-dO-8i0" userLabel="Score">
-                                <rect key="frame" x="134.5" y="222" width="145" height="145"/>
+                                <rect key="frame" x="134.66666666666669" y="222" width="144.66666666666669" height="145"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="VSi-AY-C64"/>
                                     <constraint firstAttribute="width" secondItem="iOG-dO-8i0" secondAttribute="height" multiplier="1:1" id="b7k-35-CBE"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Mt4-aP-R2d" userLabel="Bottom">
-                                <rect key="frame" x="83" y="573" width="248" height="73.5"/>
+                                <rect key="frame" x="82.666666666666686" y="572.66666666666663" width="248.66666666666663" height="73.666666666666629"/>
                                 <subviews>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5s-Or-nGJ" userLabel="G">
-                                        <rect key="frame" x="0.0" y="0.0" width="73.5" height="73.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="73.666666666666671"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="c5s-Or-nGJ" secondAttribute="height" multiplier="1:1" id="he3-fZ-iQp"/>
                                         </constraints>
@@ -302,7 +331,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3W-v4-TQT" userLabel="A">
-                                        <rect key="frame" x="87" y="0.0" width="74" height="73.5"/>
+                                        <rect key="frame" x="87.666666666666686" y="0.0" width="73.333333333333314" height="73.666666666666671"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="U3W-v4-TQT" secondAttribute="height" multiplier="1:1" id="X1E-sp-9vp"/>
                                         </constraints>
@@ -313,7 +342,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dk1-Mo-Ckh" userLabel="B">
-                                        <rect key="frame" x="174.5" y="0.0" width="73.5" height="73.5"/>
+                                        <rect key="frame" x="175" y="0.0" width="73.666666666666686" height="73.666666666666671"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="dk1-Mo-Ckh" secondAttribute="height" multiplier="1:1" id="eqP-fo-8lU"/>
                                         </constraints>
@@ -326,20 +355,20 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00 note/sec." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uag-Zp-vdM">
-                                <rect key="frame" x="83" y="54" width="248" height="52"/>
+                                <rect key="frame" x="82.666666666666671" y="54" width="248.66666666666663" height="51.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIE-yb-V84">
-                                <rect key="frame" x="352.5" y="59" width="41.5" height="41.5"/>
+                                <rect key="frame" x="352.66666666666674" y="59.333333333333329" width="41.333333333333314" height="41.333333333333329"/>
                                 <state key="normal" image="Reset"/>
                                 <connections>
                                     <action selector="resetNotesPerSecTouched:" destination="Ncr-JZ-hcc" eventType="touchUpInside" id="Av8-K4-65w"/>
                                 </connections>
                             </button>
                             <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Check" translatesAutoresizingMaskIntoConstraints="NO" id="Cmj-DU-SKc" userLabel="Result">
-                                <rect key="frame" x="149" y="236.5" width="116" height="116"/>
+                                <rect key="frame" x="149" y="236.33333333333337" width="116" height="116"/>
                                 <color key="tintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
@@ -408,6 +437,7 @@
         <image name="interval_picker" width="1024" height="1024"/>
         <image name="sight_reading_picker" width="1024" height="1024"/>
         <image name="sight_singing_picker" width="1024" height="1024"/>
+        <image name="speaker" width="512" height="512"/>
         <image name="treble_0" width="512" height="512"/>
     </resources>
 </document>

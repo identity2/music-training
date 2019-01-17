@@ -10,3 +10,7 @@
 
 **2019.01.01**
 - Completed Sight Reading.
+
+**2019.01.17**
+- Set Autolayouts for some views in Interval View Controller.
+- Filtered out the white inner backgrounds of buttons.
