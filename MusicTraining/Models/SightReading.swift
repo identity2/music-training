@@ -47,7 +47,7 @@ class SightReading {
         totalAnsweredNotes = max(0, totalAnsweredNotes + (correct ? 1 : -1))
         totalTimeSpent += timeSpent
         
-        storesData()
+        storeData()
         
         return (correct, correctAnswer)
     }
@@ -56,11 +56,11 @@ class SightReading {
         totalAnsweredNotes = 0
         totalTimeSpent = 0.0
         
-        storesData()
+        storeData()
     }
     
     // Stores stats to UserDefaults.
-    private func storesData() {
+    private func storeData() {
         UserDefaults.standard.set(totalAnsweredNotes, forKey: answeredNotesKey)
         UserDefaults.standard.set(totalTimeSpent, forKey: timeSpentKey)
     }

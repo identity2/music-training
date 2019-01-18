@@ -23,4 +23,8 @@ class SoundPlayer {
     func play() {
         player.play()
     }
+    
+    func stop() {
+        player.stop()
+    }
 }

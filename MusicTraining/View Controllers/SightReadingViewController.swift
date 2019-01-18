@@ -4,14 +4,6 @@ class SightReadingViewController : UIViewController {
     // MARK: Constants.
     let showAnswerDuration = TimeInterval(0.7)
     let npsLabelSuffix = " note/sec."
-    let correctTint = UIColor.green
-    let wrongTint = UIColor.red
-    let fixedTint = UIColor.init(red: CGFloat(0.22), green: CGFloat(0.57), blue: CGFloat(0.22), alpha: CGFloat(1.0))
-    let checkImage = UIImage(named: "Check")
-    let crossImage = UIImage(named: "Cross")
-    let correctSound = SoundPlayer(named: "correct")
-    let wrongSound = SoundPlayer(named: "wrong")
-    let nextSound = SoundPlayer(named: "next")
     
     // Mark: Variables.
     var sightReading = SightReading()
@@ -51,26 +43,26 @@ class SightReadingViewController : UIViewController {
         buttonsEnabled = true
         resultImageView.image = nil
         
-        nextSound.play()
+        Resources.nextSound.play()
     }
     
     func correctAnswerShow(index: Int) {
-        notePickers[index].tintColor = correctTint
+        notePickers[index].tintColor = Resources.correctTint
         
-        resultImageView.image = checkImage
-        resultImageView.tintColor = correctTint
+        resultImageView.image = Resources.checkImage
+        resultImageView.tintColor = Resources.correctTint
         
-        correctSound.play()
+        Resources.correctSound.play()
     }
     
     func wrongAnswerShow(selected: Int, correct: Int) {
-        notePickers[selected].tintColor = wrongTint
-        notePickers[correct].tintColor = fixedTint
+        notePickers[selected].tintColor = Resources.wrongTint
+        notePickers[correct].tintColor = Resources.fixedTint
         
-        resultImageView.image = crossImage
-        resultImageView.tintColor = wrongTint
+        resultImageView.image = Resources.crossImage
+        resultImageView.tintColor = Resources.wrongTint
         
-        wrongSound.play()
+        Resources.wrongSound.play()
     }
     
     func resetAllColors() {

@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		68728513A2EA9856B183AA0E /* Pods_MusicTraining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877DAC459D9E6946D2F696B2 /* Pods_MusicTraining.framework */; };
+		D911952121F1DCC8008F19B0 /* AudioNoteForInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911952021F1DCC8008F19B0 /* AudioNoteForInterval.swift */; };
+		D911952321F20AC4008F19B0 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911952221F20AC4008F19B0 /* Resources.swift */; };
+		D913050E21F1BD9300AC928F /* IntervalTraining.swift in Sources */ = {isa = PBXBuildFile; fileRef = D913050D21F1BD9300AC928F /* IntervalTraining.swift */; };
 		D934015F21CE0D5900F0D3C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934015E21CE0D5900F0D3C4 /* AppDelegate.swift */; };
 		D934016421CE0D5900F0D3C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D934016221CE0D5900F0D3C4 /* Main.storyboard */; };
 		D934016621CE0D5A00F0D3C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D934016521CE0D5A00F0D3C4 /* Assets.xcassets */; };
 		D934016921CE0D5A00F0D3C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D934016721CE0D5A00F0D3C4 /* LaunchScreen.storyboard */; };
 		D9759F5B21DB789900D7412E /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9759F5A21DB789900D7412E /* SoundPlayer.swift */; };
-		D97B4A4321D4D1AD0025BE75 /* NoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B4A4221D4D1AD0025BE75 /* NoteImageView.swift */; };
 		D97B4A4621D4D1F80025BE75 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B4A4521D4D1F80025BE75 /* Note.swift */; };
 		D97B4A4821D4D7250025BE75 /* NoteGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B4A4721D4D7250025BE75 /* NoteGenerator.swift */; };
 		D97B4A5C21D4F1380025BE75 /* NoteGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B4A5B21D4F1380025BE75 /* NoteGeneratorTests.swift */; };
@@ -39,6 +41,9 @@
 		5924A5350CA62AA36EFC43CE /* Pods-MusicTraining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicTraining.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicTraining/Pods-MusicTraining.debug.xcconfig"; sourceTree = "<group>"; };
 		6B8D15EA9B1605F19C553A41 /* Pods-MusicTraining.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicTraining.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusicTraining/Pods-MusicTraining.release.xcconfig"; sourceTree = "<group>"; };
 		877DAC459D9E6946D2F696B2 /* Pods_MusicTraining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicTraining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D911952021F1DCC8008F19B0 /* AudioNoteForInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioNoteForInterval.swift; sourceTree = "<group>"; };
+		D911952221F20AC4008F19B0 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		D913050D21F1BD9300AC928F /* IntervalTraining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTraining.swift; sourceTree = "<group>"; };
 		D934015B21CE0D5900F0D3C4 /* MusicTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D934015E21CE0D5900F0D3C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D934016321CE0D5900F0D3C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +51,6 @@
 		D934016821CE0D5A00F0D3C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D934016A21CE0D5A00F0D3C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9759F5A21DB789900D7412E /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
-		D97B4A4221D4D1AD0025BE75 /* NoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteImageView.swift; sourceTree = "<group>"; };
 		D97B4A4521D4D1F80025BE75 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		D97B4A4721D4D7250025BE75 /* NoteGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteGenerator.swift; sourceTree = "<group>"; };
 		D97B4A5121D4F1170025BE75 /* MusicTrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicTrainingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,7 +123,6 @@
 				D934016521CE0D5A00F0D3C4 /* Assets.xcassets */,
 				D934016721CE0D5A00F0D3C4 /* LaunchScreen.storyboard */,
 				D934016A21CE0D5A00F0D3C4 /* Info.plist */,
-				D97B4A4221D4D1AD0025BE75 /* NoteImageView.swift */,
 			);
 			path = MusicTraining;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				D9759F5A21DB789900D7412E /* SoundPlayer.swift */,
+				D911952221F20AC4008F19B0 /* Resources.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -138,6 +142,8 @@
 				D97B4A4521D4D1F80025BE75 /* Note.swift */,
 				D97B4A4721D4D7250025BE75 /* NoteGenerator.swift */,
 				D97DE1BF21DB2A060081CABE /* SightReading.swift */,
+				D913050D21F1BD9300AC928F /* IntervalTraining.swift */,
+				D911952021F1DCC8008F19B0 /* AudioNoteForInterval.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -299,9 +305,11 @@
 				D9759F5B21DB789900D7412E /* SoundPlayer.swift in Sources */,
 				D9D9155521D1438D0087BC13 /* ChordProgressionViewController.swift in Sources */,
 				D97B4A4621D4D1F80025BE75 /* Note.swift in Sources */,
-				D97B4A4321D4D1AD0025BE75 /* NoteImageView.swift in Sources */,
+				D913050E21F1BD9300AC928F /* IntervalTraining.swift in Sources */,
 				D934015F21CE0D5900F0D3C4 /* AppDelegate.swift in Sources */,
+				D911952121F1DCC8008F19B0 /* AudioNoteForInterval.swift in Sources */,
 				D97DE1C021DB2A060081CABE /* SightReading.swift in Sources */,
+				D911952321F20AC4008F19B0 /* Resources.swift in Sources */,
 				D97B4A4821D4D7250025BE75 /* NoteGenerator.swift in Sources */,
 				D9D9155121D143410087BC13 /* SightSingingViewController.swift in Sources */,
 				D9D9155321D143720087BC13 /* IntervalViewController.swift in Sources */,

@@ -49,3 +49,5 @@ The note convert table for `getNoteBy(index:isTreble:)`:
     | 10             | m7    |
     | 11             | M7    |
     | 12             | P8    |
+    
+    P1 will not appear in the interval training.

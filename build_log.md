@@ -14,3 +14,6 @@
 **2019.01.17**
 - Set Autolayouts for some views in Interval View Controller.
 - Filtered out the white inner backgrounds of buttons.
+
+**2019.01.18**
+- Completed Interval Training. More tests needed.
