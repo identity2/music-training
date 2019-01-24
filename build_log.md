@@ -17,3 +17,7 @@
 
 **2019.01.18**
 - Completed Interval Training. More tests needed.
+
+**2019.01.24**
+- Completed audio polling (converting raw audio to nearest note) for Sight Singing.
+

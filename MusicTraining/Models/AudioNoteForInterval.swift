@@ -11,7 +11,7 @@ class AudioNoteForInterval {
     
     static func getRandomIntervalPair() -> (Int, Int) {
         let first = Int.random(in: 0..<intervalMaxRange)
-        let second = first + Int.random(in: 1..<intervalMaxRange)
+        let second = first + Int.random(in: 1...intervalMaxRange)
         return (first, second)
     }
 }

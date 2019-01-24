@@ -4,6 +4,7 @@ class Resources {
     static let correctTint = UIColor.green
     static let wrongTint = UIColor.red
     static let fixedTint = UIColor.init(red: CGFloat(0.22), green: CGFloat(0.57), blue: CGFloat(0.22), alpha: CGFloat(1.0))
+    static let recordingTint = UIColor.red
     static let speakerTint = UIColor.blue
     
     static let checkImage = UIImage(named: "Check")

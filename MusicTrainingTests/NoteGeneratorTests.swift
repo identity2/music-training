@@ -20,7 +20,7 @@ class NoteGeneratorTests: XCTestCase {
         XCTAssertEqual(NoteGenerator.getNoteBy(index: 12, isTreble: false), Note(octave: 3, key: .B))
         XCTAssertEqual(NoteGenerator.getNoteBy(index: 14, isTreble: false), Note(octave: 4, key: .D))
         
-        XCTAssertEqual(NoteGenerator.getNoteBy(index: 0, isTreble: true), Note(octave: 3, key: .D))
+        XCTAssertEqual(NoteGenerator.getNoteBy(index: 0, isTreble: true), Note(octave: 3, key: .B))
         XCTAssertEqual(NoteGenerator.getNoteBy(index: 7, isTreble: true), Note(octave: 4, key: .B))
         XCTAssertEqual(NoteGenerator.getNoteBy(index: 8, isTreble: true), Note(octave: 5, key: .C))
         XCTAssertEqual(NoteGenerator.getNoteBy(index: 12, isTreble: true), Note(octave: 5, key: .G))

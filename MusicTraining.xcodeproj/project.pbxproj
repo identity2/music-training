@@ -11,6 +11,7 @@
 		D911952121F1DCC8008F19B0 /* AudioNoteForInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911952021F1DCC8008F19B0 /* AudioNoteForInterval.swift */; };
 		D911952321F20AC4008F19B0 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911952221F20AC4008F19B0 /* Resources.swift */; };
 		D913050E21F1BD9300AC928F /* IntervalTraining.swift in Sources */ = {isa = PBXBuildFile; fileRef = D913050D21F1BD9300AC928F /* IntervalTraining.swift */; };
+		D92EF25D21F9DB21005BE9D3 /* SightSinging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92EF25C21F9DB21005BE9D3 /* SightSinging.swift */; };
 		D934015F21CE0D5900F0D3C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934015E21CE0D5900F0D3C4 /* AppDelegate.swift */; };
 		D934016421CE0D5900F0D3C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D934016221CE0D5900F0D3C4 /* Main.storyboard */; };
 		D934016621CE0D5A00F0D3C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D934016521CE0D5A00F0D3C4 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		D9D9155321D143720087BC13 /* IntervalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9155221D143720087BC13 /* IntervalViewController.swift */; };
 		D9D9155521D1438D0087BC13 /* ChordProgressionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9155421D1438D0087BC13 /* ChordProgressionViewController.swift */; };
 		D9D9155721D147730087BC13 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9155621D147730087BC13 /* MenuViewController.swift */; };
+		D9DCEF8721F9C07A00487656 /* AudioPoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCEF8621F9C07A00487656 /* AudioPoller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 		D911952021F1DCC8008F19B0 /* AudioNoteForInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioNoteForInterval.swift; sourceTree = "<group>"; };
 		D911952221F20AC4008F19B0 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		D913050D21F1BD9300AC928F /* IntervalTraining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTraining.swift; sourceTree = "<group>"; };
+		D92EF25C21F9DB21005BE9D3 /* SightSinging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightSinging.swift; sourceTree = "<group>"; };
 		D934015B21CE0D5900F0D3C4 /* MusicTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D934015E21CE0D5900F0D3C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D934016321CE0D5900F0D3C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,6 +65,7 @@
 		D9D9155221D143720087BC13 /* IntervalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalViewController.swift; sourceTree = "<group>"; };
 		D9D9155421D1438D0087BC13 /* ChordProgressionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordProgressionViewController.swift; sourceTree = "<group>"; };
 		D9D9155621D147730087BC13 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		D9DCEF8621F9C07A00487656 /* AudioPoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPoller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 			children = (
 				D9759F5A21DB789900D7412E /* SoundPlayer.swift */,
 				D911952221F20AC4008F19B0 /* Resources.swift */,
+				D9DCEF8621F9C07A00487656 /* AudioPoller.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 				D97DE1BF21DB2A060081CABE /* SightReading.swift */,
 				D913050D21F1BD9300AC928F /* IntervalTraining.swift */,
 				D911952021F1DCC8008F19B0 /* AudioNoteForInterval.swift */,
+				D92EF25C21F9DB21005BE9D3 /* SightSinging.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -300,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9DCEF8721F9C07A00487656 /* AudioPoller.swift in Sources */,
 				D9D9154F21D1408C0087BC13 /* SightReadingViewController.swift in Sources */,
 				D9D9155721D147730087BC13 /* MenuViewController.swift in Sources */,
 				D9759F5B21DB789900D7412E /* SoundPlayer.swift in Sources */,
@@ -312,6 +319,7 @@
 				D911952321F20AC4008F19B0 /* Resources.swift in Sources */,
 				D97B4A4821D4D7250025BE75 /* NoteGenerator.swift in Sources */,
 				D9D9155121D143410087BC13 /* SightSingingViewController.swift in Sources */,
+				D92EF25D21F9DB21005BE9D3 /* SightSinging.swift in Sources */,
 				D9D9155321D143720087BC13 /* IntervalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
