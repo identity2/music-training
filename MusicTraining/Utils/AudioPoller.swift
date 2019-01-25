@@ -11,8 +11,8 @@ class AudioPoller {
     let tracker: AKFrequencyTracker
     let silence: AKBooster
     
-    let totalPollingCount = 60     // 60 * 0.0125 = 0.75
-    let pollingInterval = 0.0125
+    let totalPollingCount = 60     // 60 * 0.01 = 0.6
+    let pollingInterval = 0.01
     let successRatio = 0.3
     
     let deltaTolerance = 50.0
@@ -23,12 +23,12 @@ class AudioPoller {
     var pollingTimer: Timer?
     
     init() {
-        do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playAndRecord, mode: AVAudioSession.Mode.measurement, options: [])
-            try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSession.PortOverride.speaker)
-        } catch let error {
-            print(error.localizedDescription)
-        }
+//        do {
+//            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playAndRecord, mode: AVAudioSession.Mode.measurement, options: [])
+//            try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSession.PortOverride.speaker)
+//        } catch let error {
+//            print(error.localizedDescription)
+//        }
         
         AKSettings.audioInputEnabled = true
         mic = AKMicrophone()
@@ -36,25 +36,20 @@ class AudioPoller {
         silence = AKBooster(tracker, gain: 0)
         
         AudioKit.output = silence
-        
+        defaultToSpeaker()
+    }
+    
+    deinit {
+        stop()
+    }
+    
+    func start() {
         do {
             try AudioKit.start()
         } catch let error {
             print(error.localizedDescription)
         }
-    }
-    
-    deinit {
-        do {
-            try AudioKit.stop()
-        } catch let error {
-            print(error.localizedDescription)
-        }
         
-        stop()
-    }
-    
-    func start() {
         noteSungCount.removeAll()
         pollingCount = 0
         pollingTimer = Timer.scheduledTimer(withTimeInterval: pollingInterval, repeats: true, block: {_ in
@@ -63,8 +58,23 @@ class AudioPoller {
     }
     
     func stop() {
+        do {
+            try AudioKit.stop()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        
         if let t = pollingTimer {
             t.invalidate()
+        }
+    }
+    
+    func defaultToSpeaker() {
+        do {
+            try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSession.PortOverride.speaker)
+            
+        } catch let error {
+            print(error.localizedDescription)
         }
     }
     

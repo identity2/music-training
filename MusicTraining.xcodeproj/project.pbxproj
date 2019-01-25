@@ -11,6 +11,7 @@
 		D911952121F1DCC8008F19B0 /* AudioNoteForInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911952021F1DCC8008F19B0 /* AudioNoteForInterval.swift */; };
 		D911952321F20AC4008F19B0 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911952221F20AC4008F19B0 /* Resources.swift */; };
 		D913050E21F1BD9300AC928F /* IntervalTraining.swift in Sources */ = {isa = PBXBuildFile; fileRef = D913050D21F1BD9300AC928F /* IntervalTraining.swift */; };
+		D91AFDCA21FAB4A500296F8D /* AudioPollingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91AFDC921FAB4A500296F8D /* AudioPollingTest.swift */; };
 		D92EF25D21F9DB21005BE9D3 /* SightSinging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92EF25C21F9DB21005BE9D3 /* SightSinging.swift */; };
 		D934015F21CE0D5900F0D3C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934015E21CE0D5900F0D3C4 /* AppDelegate.swift */; };
 		D934016421CE0D5900F0D3C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D934016221CE0D5900F0D3C4 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		D911952021F1DCC8008F19B0 /* AudioNoteForInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioNoteForInterval.swift; sourceTree = "<group>"; };
 		D911952221F20AC4008F19B0 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		D913050D21F1BD9300AC928F /* IntervalTraining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTraining.swift; sourceTree = "<group>"; };
+		D91AFDC921FAB4A500296F8D /* AudioPollingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPollingTest.swift; sourceTree = "<group>"; };
 		D92EF25C21F9DB21005BE9D3 /* SightSinging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightSinging.swift; sourceTree = "<group>"; };
 		D934015B21CE0D5900F0D3C4 /* MusicTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D934015E21CE0D5900F0D3C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 		D97B4A5221D4F1170025BE75 /* MusicTrainingTests */ = {
 			isa = PBXGroup;
 			children = (
+				D91AFDC921FAB4A500296F8D /* AudioPollingTest.swift */,
 				D97B4A5B21D4F1380025BE75 /* NoteGeneratorTests.swift */,
 				D97B4A5521D4F1170025BE75 /* Info.plist */,
 			);
@@ -328,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91AFDCA21FAB4A500296F8D /* AudioPollingTest.swift in Sources */,
 				D97B4A5C21D4F1380025BE75 /* NoteGeneratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

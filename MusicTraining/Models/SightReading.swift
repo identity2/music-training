@@ -29,7 +29,7 @@ class SightReading {
     func newRound() -> UIImage {
         var newNote: (Note, UIImage)
         
-        // Avoid rolling the same image twice a row.
+        // Avoid rolling the same image twice in a row.
         repeat {
             newNote = NoteGenerator.getRandomNoteImage()
         } while newNote.1 == currNoteImage

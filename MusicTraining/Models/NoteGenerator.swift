@@ -12,9 +12,9 @@ class NoteGenerator {
     static let bassPrefix = "bass_"
     
     // Get a uniformly random note-image pair from the available images.
-    static func getRandomNoteImage() -> (Note, UIImage) {
+    static func getRandomNoteImage(trebleOnly: Bool = false) -> (Note, UIImage) {
         let noteIndex = Int.random(in: 0..<noteRange)
-        let isTreble = Bool.random()
+        let isTreble = trebleOnly ? true : Bool.random()
         
         let resultNote = getNoteBy(index: noteIndex, isTreble: isTreble)
         let resultImage = getNoteImageBy(index: noteIndex, isTreble: isTreble)

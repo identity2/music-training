@@ -10,8 +10,8 @@ class SoundPlayer {
         }
         
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: .default, options: .duckOthers)
-            try AVAudioSession.sharedInstance().setActive(true)
+            // try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: .default, options: .duckOthers)
+            // try AVAudioSession.sharedInstance().setActive(true)
             
             player = try AVAudioPlayer(data: soundAsset.data, fileTypeHint: AVFileType.wav.rawValue)
             player.prepareToPlay()

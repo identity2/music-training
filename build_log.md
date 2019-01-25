@@ -20,4 +20,7 @@
 
 **2019.01.24**
 - Completed audio polling (converting raw audio to nearest note) for Sight Singing.
+- Set Autolayouts for Sight Singing View Controller.
 
+**2019.01.25**
+- Completed Sight Singing.
