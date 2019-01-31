@@ -22,6 +22,9 @@
 		D97B4A4821D4D7250025BE75 /* NoteGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B4A4721D4D7250025BE75 /* NoteGenerator.swift */; };
 		D97B4A5C21D4F1380025BE75 /* NoteGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B4A5B21D4F1380025BE75 /* NoteGeneratorTests.swift */; };
 		D97DE1C021DB2A060081CABE /* SightReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97DE1BF21DB2A060081CABE /* SightReading.swift */; };
+		D9CDB4EA2202EFD90043109B /* ChordProgression.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CDB4E92202EFD90043109B /* ChordProgression.swift */; };
+		D9CDB4EC2202FE6F0043109B /* ChordProgressionPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CDB4EB2202FE6F0043109B /* ChordProgressionPlayer.swift */; };
+		D9CDB4F02203286E0043109B /* ViewControllerWithAdMob.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CDB4EF2203286E0043109B /* ViewControllerWithAdMob.swift */; };
 		D9D9154F21D1408C0087BC13 /* SightReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9154E21D1408C0087BC13 /* SightReadingViewController.swift */; };
 		D9D9155121D143410087BC13 /* SightSingingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9155021D143410087BC13 /* SightSingingViewController.swift */; };
 		D9D9155321D143720087BC13 /* IntervalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9155221D143720087BC13 /* IntervalViewController.swift */; };
@@ -62,6 +65,9 @@
 		D97B4A5521D4F1170025BE75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D97B4A5B21D4F1380025BE75 /* NoteGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteGeneratorTests.swift; sourceTree = "<group>"; };
 		D97DE1BF21DB2A060081CABE /* SightReading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightReading.swift; sourceTree = "<group>"; };
+		D9CDB4E92202EFD90043109B /* ChordProgression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordProgression.swift; sourceTree = "<group>"; };
+		D9CDB4EB2202FE6F0043109B /* ChordProgressionPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordProgressionPlayer.swift; sourceTree = "<group>"; };
+		D9CDB4EF2203286E0043109B /* ViewControllerWithAdMob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerWithAdMob.swift; sourceTree = "<group>"; };
 		D9D9154E21D1408C0087BC13 /* SightReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightReadingViewController.swift; sourceTree = "<group>"; };
 		D9D9155021D143410087BC13 /* SightSingingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightSingingViewController.swift; sourceTree = "<group>"; };
 		D9D9155221D143720087BC13 /* IntervalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +145,8 @@
 				D9759F5A21DB789900D7412E /* SoundPlayer.swift */,
 				D911952221F20AC4008F19B0 /* Resources.swift */,
 				D9DCEF8621F9C07A00487656 /* AudioPoller.swift */,
+				D9CDB4EB2202FE6F0043109B /* ChordProgressionPlayer.swift */,
+				D9CDB4EF2203286E0043109B /* ViewControllerWithAdMob.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -152,6 +160,7 @@
 				D913050D21F1BD9300AC928F /* IntervalTraining.swift */,
 				D911952021F1DCC8008F19B0 /* AudioNoteForInterval.swift */,
 				D92EF25C21F9DB21005BE9D3 /* SightSinging.swift */,
+				D9CDB4E92202EFD90043109B /* ChordProgression.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -309,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9CDB4EC2202FE6F0043109B /* ChordProgressionPlayer.swift in Sources */,
 				D9DCEF8721F9C07A00487656 /* AudioPoller.swift in Sources */,
 				D9D9154F21D1408C0087BC13 /* SightReadingViewController.swift in Sources */,
 				D9D9155721D147730087BC13 /* MenuViewController.swift in Sources */,
@@ -321,9 +331,11 @@
 				D97DE1C021DB2A060081CABE /* SightReading.swift in Sources */,
 				D911952321F20AC4008F19B0 /* Resources.swift in Sources */,
 				D97B4A4821D4D7250025BE75 /* NoteGenerator.swift in Sources */,
+				D9CDB4EA2202EFD90043109B /* ChordProgression.swift in Sources */,
 				D9D9155121D143410087BC13 /* SightSingingViewController.swift in Sources */,
 				D92EF25D21F9DB21005BE9D3 /* SightSinging.swift in Sources */,
 				D9D9155321D143720087BC13 /* IntervalViewController.swift in Sources */,
+				D9CDB4F02203286E0043109B /* ViewControllerWithAdMob.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,7 +506,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = shinerightstudio.MusicTraining;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinerightstudio.MusicTraining;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -513,7 +525,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = shinerightstudio.MusicTraining;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinerightstudio.MusicTraining;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

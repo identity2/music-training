@@ -24,3 +24,9 @@
 
 **2019.01.25**
 - Completed Sight Singing.
+
+**2019.01.31** [Ver: 1.0, Build: 1]
+- Completed Chord Progression Training.
+- Created splash screen and app icon.
+- Wrote app description and added project page.
+- Archived and uploaded to App Store.

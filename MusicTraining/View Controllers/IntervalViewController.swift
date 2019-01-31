@@ -1,6 +1,6 @@
 import UIKit
 
-class IntervalViewController : UIViewController {
+class IntervalViewController : ViewControllerWithAdMob {
     let showAnswerDuration = TimeInterval(1.0)
     let speakerTintDuration = TimeInterval(1.0)
     let correctRateLabelSuffix = "% Correct Rate"

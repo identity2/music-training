@@ -1,6 +1,6 @@
 import UIKit
 
-class SightSingingViewController : UIViewController, AudioPollerDelegate {
+class SightSingingViewController : ViewControllerWithAdMob, AudioPollerDelegate {
     let showAnswerDuration = TimeInterval(0.5)
     let correctRateLabelSuffix = "% Correct Rate"
     let sampleNoteCooldown = TimeInterval(1.0)

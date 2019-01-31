@@ -7,7 +7,7 @@ There are four main functions:
 3. Interval Dictation.
 4. Chord Progression Dictation.
 
-**THE APP IS STILL IN DEVELOPMENT. SINCE THIS IS A PERSONAL PROJECT, I DO NOT ACCEPT ANY PULL REQUEST AT THE MOMENT.**
+[Project Page](http://shinerightstudio.com/music-training)
 
 
 ## Documentation

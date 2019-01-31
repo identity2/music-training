@@ -1,7 +1,7 @@
 import UIKit
 import AVFoundation
 
-class MenuViewController : UIViewController {
+class MenuViewController : ViewControllerWithAdMob {
     override func viewDidLoad() {
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playAndRecord, mode: AVAudioSession.Mode.measurement, options: [])

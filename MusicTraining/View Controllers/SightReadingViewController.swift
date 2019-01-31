@@ -1,6 +1,6 @@
 import UIKit
 
-class SightReadingViewController : UIViewController {
+class SightReadingViewController: ViewControllerWithAdMob {
     // MARK: Constants.
     let showAnswerDuration = TimeInterval(0.7)
     let npsLabelSuffix = " note/sec."
