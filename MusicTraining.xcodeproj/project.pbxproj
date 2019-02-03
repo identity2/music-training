@@ -13,6 +13,21 @@
 		D913050E21F1BD9300AC928F /* IntervalTraining.swift in Sources */ = {isa = PBXBuildFile; fileRef = D913050D21F1BD9300AC928F /* IntervalTraining.swift */; };
 		D91AFDCA21FAB4A500296F8D /* AudioPollingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91AFDC921FAB4A500296F8D /* AudioPollingTest.swift */; };
 		D92EF25D21F9DB21005BE9D3 /* SightSinging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92EF25C21F9DB21005BE9D3 /* SightSinging.swift */; };
+		D930D6F72205F94C00052A91 /* TMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D6F62205F94C00052A91 /* TMViewController.swift */; };
+		D930D6F92205F9C600052A91 /* TMSmallScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D6F82205F9C600052A91 /* TMSmallScreenView.swift */; };
+		D930D6FB2205F9EA00052A91 /* TMMetronomeAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D6FA2205F9EA00052A91 /* TMMetronomeAnimationView.swift */; };
+		D930D6FD2205FA4700052A91 /* TMDigitNoteImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D6FC2205FA4700052A91 /* TMDigitNoteImages.swift */; };
+		D930D6FF2205FA6E00052A91 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D6FE2205FA6E00052A91 /* Extensions.swift */; };
+		D930D7012205FA8300052A91 /* TMTunerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D7002205FA8300052A91 /* TMTunerView.swift */; };
+		D930D7032205FAA800052A91 /* TMTuner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D7022205FAA800052A91 /* TMTuner.swift */; };
+		D930D7052205FAC100052A91 /* TMPitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D7042205FAC100052A91 /* TMPitch.swift */; };
+		D930D7072205FAD000052A91 /* TMNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D7062205FAD000052A91 /* TMNote.swift */; };
+		D930D7112206E38700052A91 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D7102206E38700052A91 /* TreeNode.swift */; };
+		D930D7132206E3D200052A91 /* Quicksort.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D7122206E3D200052A91 /* Quicksort.swift */; };
+		D930D7152206E6D300052A91 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D7142206E6D300052A91 /* TrieNode.swift */; };
+		D930D7172206E72400052A91 /* Mergesort.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D7162206E72400052A91 /* Mergesort.swift */; };
+		D930D7192206E74E00052A91 /* HashedHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D7182206E74E00052A91 /* HashedHeap.swift */; };
+		D930D71B2207024C00052A91 /* TMToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D71A2207024C00052A91 /* TMToggleView.swift */; };
 		D934015F21CE0D5900F0D3C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934015E21CE0D5900F0D3C4 /* AppDelegate.swift */; };
 		D934016421CE0D5900F0D3C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D934016221CE0D5900F0D3C4 /* Main.storyboard */; };
 		D934016621CE0D5A00F0D3C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D934016521CE0D5A00F0D3C4 /* Assets.xcassets */; };
@@ -52,6 +67,21 @@
 		D913050D21F1BD9300AC928F /* IntervalTraining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTraining.swift; sourceTree = "<group>"; };
 		D91AFDC921FAB4A500296F8D /* AudioPollingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPollingTest.swift; sourceTree = "<group>"; };
 		D92EF25C21F9DB21005BE9D3 /* SightSinging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightSinging.swift; sourceTree = "<group>"; };
+		D930D6F62205F94C00052A91 /* TMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMViewController.swift; sourceTree = "<group>"; };
+		D930D6F82205F9C600052A91 /* TMSmallScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMSmallScreenView.swift; sourceTree = "<group>"; };
+		D930D6FA2205F9EA00052A91 /* TMMetronomeAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMMetronomeAnimationView.swift; sourceTree = "<group>"; };
+		D930D6FC2205FA4700052A91 /* TMDigitNoteImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDigitNoteImages.swift; sourceTree = "<group>"; };
+		D930D6FE2205FA6E00052A91 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D930D7002205FA8300052A91 /* TMTunerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMTunerView.swift; sourceTree = "<group>"; };
+		D930D7022205FAA800052A91 /* TMTuner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMTuner.swift; sourceTree = "<group>"; };
+		D930D7042205FAC100052A91 /* TMPitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMPitch.swift; sourceTree = "<group>"; };
+		D930D7062205FAD000052A91 /* TMNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMNote.swift; sourceTree = "<group>"; };
+		D930D7102206E38700052A91 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		D930D7122206E3D200052A91 /* Quicksort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quicksort.swift; sourceTree = "<group>"; };
+		D930D7142206E6D300052A91 /* TrieNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
+		D930D7162206E72400052A91 /* Mergesort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mergesort.swift; sourceTree = "<group>"; };
+		D930D7182206E74E00052A91 /* HashedHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashedHeap.swift; sourceTree = "<group>"; };
+		D930D71A2207024C00052A91 /* TMToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMToggleView.swift; sourceTree = "<group>"; };
 		D934015B21CE0D5900F0D3C4 /* MusicTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D934015E21CE0D5900F0D3C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D934016321CE0D5900F0D3C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,6 +134,84 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D930D6F32205F8FA00052A91 /* Tuner Metronome */ = {
+			isa = PBXGroup;
+			children = (
+				D930D6F62205F94C00052A91 /* TMViewController.swift */,
+				D930D6F82205F9C600052A91 /* TMSmallScreenView.swift */,
+				D930D6FA2205F9EA00052A91 /* TMMetronomeAnimationView.swift */,
+				D930D6FC2205FA4700052A91 /* TMDigitNoteImages.swift */,
+				D930D6FE2205FA6E00052A91 /* Extensions.swift */,
+				D930D7002205FA8300052A91 /* TMTunerView.swift */,
+				D930D7022205FAA800052A91 /* TMTuner.swift */,
+				D930D7042205FAC100052A91 /* TMPitch.swift */,
+				D930D7062205FAD000052A91 /* TMNote.swift */,
+				D930D71A2207024C00052A91 /* TMToggleView.swift */,
+			);
+			path = "Tuner Metronome";
+			sourceTree = "<group>";
+		};
+		D930D7082206DF8500052A91 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D9759F5A21DB789900D7412E /* SoundPlayer.swift */,
+				D911952221F20AC4008F19B0 /* Resources.swift */,
+				D9DCEF8621F9C07A00487656 /* AudioPoller.swift */,
+				D9CDB4EB2202FE6F0043109B /* ChordProgressionPlayer.swift */,
+				D9CDB4EF2203286E0043109B /* ViewControllerWithAdMob.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D930D7092206DF9C00052A91 /* Sight Reading */ = {
+			isa = PBXGroup;
+			children = (
+				D9D9154E21D1408C0087BC13 /* SightReadingViewController.swift */,
+				D97DE1BF21DB2A060081CABE /* SightReading.swift */,
+			);
+			path = "Sight Reading";
+			sourceTree = "<group>";
+		};
+		D930D70A2206DFA800052A91 /* Sight Singing */ = {
+			isa = PBXGroup;
+			children = (
+				D9D9155021D143410087BC13 /* SightSingingViewController.swift */,
+				D92EF25C21F9DB21005BE9D3 /* SightSinging.swift */,
+			);
+			path = "Sight Singing";
+			sourceTree = "<group>";
+		};
+		D930D70B2206DFB000052A91 /* Chord Progression */ = {
+			isa = PBXGroup;
+			children = (
+				D9D9155421D1438D0087BC13 /* ChordProgressionViewController.swift */,
+				D9CDB4E92202EFD90043109B /* ChordProgression.swift */,
+			);
+			path = "Chord Progression";
+			sourceTree = "<group>";
+		};
+		D930D70C2206DFB700052A91 /* Interval */ = {
+			isa = PBXGroup;
+			children = (
+				D911952021F1DCC8008F19B0 /* AudioNoteForInterval.swift */,
+				D9D9155221D143720087BC13 /* IntervalViewController.swift */,
+				D913050D21F1BD9300AC928F /* IntervalTraining.swift */,
+			);
+			path = Interval;
+			sourceTree = "<group>";
+		};
+		D930D70D2206E04000052A91 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				D930D7102206E38700052A91 /* TreeNode.swift */,
+				D930D7122206E3D200052A91 /* Quicksort.swift */,
+				D930D7142206E6D300052A91 /* TrieNode.swift */,
+				D930D7162206E72400052A91 /* Mergesort.swift */,
+				D930D7182206E74E00052A91 /* HashedHeap.swift */,
+			);
+			path = Algorithms;
+			sourceTree = "<group>";
+		};
 		D934015221CE0D5800F0D3C4 = {
 			isa = PBXGroup;
 			children = (
@@ -127,10 +235,16 @@
 		D934015D21CE0D5900F0D3C4 /* MusicTraining */ = {
 			isa = PBXGroup;
 			children = (
-				D9759F5921DB788900D7412E /* Utils */,
-				D97B4A4421D4D1EA0025BE75 /* Models */,
-				D9D9154D21D1402A0087BC13 /* View Controllers */,
+				D930D70D2206E04000052A91 /* Algorithms */,
+				D930D70C2206DFB700052A91 /* Interval */,
+				D930D70B2206DFB000052A91 /* Chord Progression */,
+				D930D70A2206DFA800052A91 /* Sight Singing */,
+				D930D7092206DF9C00052A91 /* Sight Reading */,
+				D930D7082206DF8500052A91 /* Utility */,
+				D930D6F32205F8FA00052A91 /* Tuner Metronome */,
+				D97B4A4421D4D1EA0025BE75 /* General Models */,
 				D934015E21CE0D5900F0D3C4 /* AppDelegate.swift */,
+				D9D9155621D147730087BC13 /* MenuViewController.swift */,
 				D934016221CE0D5900F0D3C4 /* Main.storyboard */,
 				D934016521CE0D5A00F0D3C4 /* Assets.xcassets */,
 				D934016721CE0D5A00F0D3C4 /* LaunchScreen.storyboard */,
@@ -139,30 +253,13 @@
 			path = MusicTraining;
 			sourceTree = "<group>";
 		};
-		D9759F5921DB788900D7412E /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				D9759F5A21DB789900D7412E /* SoundPlayer.swift */,
-				D911952221F20AC4008F19B0 /* Resources.swift */,
-				D9DCEF8621F9C07A00487656 /* AudioPoller.swift */,
-				D9CDB4EB2202FE6F0043109B /* ChordProgressionPlayer.swift */,
-				D9CDB4EF2203286E0043109B /* ViewControllerWithAdMob.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		D97B4A4421D4D1EA0025BE75 /* Models */ = {
+		D97B4A4421D4D1EA0025BE75 /* General Models */ = {
 			isa = PBXGroup;
 			children = (
 				D97B4A4521D4D1F80025BE75 /* Note.swift */,
 				D97B4A4721D4D7250025BE75 /* NoteGenerator.swift */,
-				D97DE1BF21DB2A060081CABE /* SightReading.swift */,
-				D913050D21F1BD9300AC928F /* IntervalTraining.swift */,
-				D911952021F1DCC8008F19B0 /* AudioNoteForInterval.swift */,
-				D92EF25C21F9DB21005BE9D3 /* SightSinging.swift */,
-				D9CDB4E92202EFD90043109B /* ChordProgression.swift */,
 			);
-			path = Models;
+			path = "General Models";
 			sourceTree = "<group>";
 		};
 		D97B4A5221D4F1170025BE75 /* MusicTrainingTests */ = {
@@ -173,18 +270,6 @@
 				D97B4A5521D4F1170025BE75 /* Info.plist */,
 			);
 			path = MusicTrainingTests;
-			sourceTree = "<group>";
-		};
-		D9D9154D21D1402A0087BC13 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				D9D9154E21D1408C0087BC13 /* SightReadingViewController.swift */,
-				D9D9155021D143410087BC13 /* SightSingingViewController.swift */,
-				D9D9155221D143720087BC13 /* IntervalViewController.swift */,
-				D9D9155421D1438D0087BC13 /* ChordProgressionViewController.swift */,
-				D9D9155621D147730087BC13 /* MenuViewController.swift */,
-			);
-			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		EF5D667C844601FDEF2FE9FC /* Frameworks */ = {
@@ -320,19 +405,34 @@
 			files = (
 				D9CDB4EC2202FE6F0043109B /* ChordProgressionPlayer.swift in Sources */,
 				D9DCEF8721F9C07A00487656 /* AudioPoller.swift in Sources */,
+				D930D7172206E72400052A91 /* Mergesort.swift in Sources */,
+				D930D7192206E74E00052A91 /* HashedHeap.swift in Sources */,
+				D930D6FF2205FA6E00052A91 /* Extensions.swift in Sources */,
 				D9D9154F21D1408C0087BC13 /* SightReadingViewController.swift in Sources */,
 				D9D9155721D147730087BC13 /* MenuViewController.swift in Sources */,
 				D9759F5B21DB789900D7412E /* SoundPlayer.swift in Sources */,
 				D9D9155521D1438D0087BC13 /* ChordProgressionViewController.swift in Sources */,
 				D97B4A4621D4D1F80025BE75 /* Note.swift in Sources */,
 				D913050E21F1BD9300AC928F /* IntervalTraining.swift in Sources */,
+				D930D7032205FAA800052A91 /* TMTuner.swift in Sources */,
+				D930D6FD2205FA4700052A91 /* TMDigitNoteImages.swift in Sources */,
 				D934015F21CE0D5900F0D3C4 /* AppDelegate.swift in Sources */,
+				D930D6F72205F94C00052A91 /* TMViewController.swift in Sources */,
+				D930D7132206E3D200052A91 /* Quicksort.swift in Sources */,
+				D930D7152206E6D300052A91 /* TrieNode.swift in Sources */,
 				D911952121F1DCC8008F19B0 /* AudioNoteForInterval.swift in Sources */,
+				D930D7072205FAD000052A91 /* TMNote.swift in Sources */,
+				D930D6FB2205F9EA00052A91 /* TMMetronomeAnimationView.swift in Sources */,
 				D97DE1C021DB2A060081CABE /* SightReading.swift in Sources */,
 				D911952321F20AC4008F19B0 /* Resources.swift in Sources */,
+				D930D7112206E38700052A91 /* TreeNode.swift in Sources */,
 				D97B4A4821D4D7250025BE75 /* NoteGenerator.swift in Sources */,
+				D930D7012205FA8300052A91 /* TMTunerView.swift in Sources */,
+				D930D6F92205F9C600052A91 /* TMSmallScreenView.swift in Sources */,
 				D9CDB4EA2202EFD90043109B /* ChordProgression.swift in Sources */,
 				D9D9155121D143410087BC13 /* SightSingingViewController.swift in Sources */,
+				D930D7052205FAC100052A91 /* TMPitch.swift in Sources */,
+				D930D71B2207024C00052A91 /* TMToggleView.swift in Sources */,
 				D92EF25D21F9DB21005BE9D3 /* SightSinging.swift in Sources */,
 				D9D9155321D143720087BC13 /* IntervalViewController.swift in Sources */,
 				D9CDB4F02203286E0043109B /* ViewControllerWithAdMob.swift in Sources */,
@@ -506,7 +606,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shinerightstudio.MusicTraining;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinerightstudio.tunermetronome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -525,7 +625,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shinerightstudio.MusicTraining;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinerightstudio.tunermetronome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

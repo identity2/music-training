@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad12_9rounded" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,29 +15,31 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2018 Shine Right Logo High Def" translatesAutoresizingMaskIntoConstraints="NO" id="kU5-bm-ghD">
-                                <rect key="frame" x="112.5" y="544" width="150" height="79.5"/>
+                                <rect key="frame" x="387" y="1098" width="250" height="133"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="kU5-bm-ghD" secondAttribute="height" multiplier="654:347" id="7vx-We-S2o"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="JBV-7Y-Rcx"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_image" translatesAutoresizingMaskIntoConstraints="NO" id="DiH-im-zHa">
-                                <rect key="frame" x="75" y="162.5" width="225" height="225"/>
+                                <rect key="frame" x="287" y="323" width="450" height="450"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="DiH-im-zHa" secondAttribute="height" multiplier="1:1" id="3dU-5K-kka"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="450" id="jbh-q6-G0u"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="kU5-bm-ghD" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.4" id="CI2-1u-bOA"/>
+                            <constraint firstItem="kU5-bm-ghD" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.4" priority="999" id="CI2-1u-bOA"/>
                             <constraint firstItem="DiH-im-zHa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IlV-bB-HwR"/>
                             <constraint firstItem="kU5-bm-ghD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="M6W-Be-Tze"/>
                             <constraint firstItem="kU5-bm-ghD" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.7" id="cjT-9C-Cms"/>
-                            <constraint firstItem="DiH-im-zHa" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.6" id="eNz-KC-xuD"/>
+                            <constraint firstItem="DiH-im-zHa" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.6" priority="999" id="eNz-KC-xuD"/>
                             <constraint firstItem="DiH-im-zHa" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.8" id="pvs-VP-Ob7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

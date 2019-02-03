@@ -1,13 +1,14 @@
 ## Project Description
-This is an iOS music theory training app written in Swift with AudioKit.
+This is an iOS tuner & music theory training app written in Swift with AudioKit.
 
 There are four main functions:
-1. Sight Reading.
-2. Sight Singing.
-3. Interval Dictation.
-4. Chord Progression Dictation.
+1. Tuner & Metronome.
+2. Sight Reading.
+3. Sight Singing.
+4. Interval Dictation.
+5. Chord Progression Dictation.
 
-[Project Page](http://shinerightstudio.com/music-training)
+[Project Page](http://shinerightstudio.com/tuner-music-training)
 
 
 ## Documentation

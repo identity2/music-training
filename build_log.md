@@ -30,3 +30,7 @@
 - Created splash screen and app icon.
 - Wrote app description and added project page.
 - Archived and uploaded to App Store.
+
+**2019.02.03** [Ver: 2.0, Build: 5] (of *com.shinerightstudio.tunermetronome*)
+- Merged this app with Tuner Metronome.
+- Also fixed some UI issues related to iPad rotation and split screen.
