@@ -48,6 +48,7 @@ class TMTunerView: UIView, TunerDelegate {
     func positionSubviews() {
         backgroundImageView.frame.size = frame.size
         
+        headImageView.image = headRegular
         headImageView.layer.anchorPoint = defaultAnchor
         headImageView.frame.size.height = headHeightProportionalToViewHeight * frame.height
         headImageView.frame.size.width = headImageView.frame.height * headAspectRatio

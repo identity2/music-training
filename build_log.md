@@ -34,3 +34,6 @@
 **2019.02.03** [Ver: 2.0, Build: 5] (of *com.shinerightstudio.tunermetronome*)
 - Merged this app with Tuner Metronome.
 - Also fixed some UI issues related to iPad rotation and split screen.
+
+**2019.02.04** [Ver: 2.0.1, Build: 6]
+- Make the head of the tuner guy appear when initializing.
