@@ -11,17 +11,21 @@ class SightReadingViewController: ViewControllerWithAdMob {
     var tintTimer: Timer? = nil
     var buttonsEnabled = false
     
-    
     // MARK: Views.
     @IBOutlet var notePickers: Array<UIButton>!
+    @IBOutlet var switchers: Array<UIButton>!
     @IBOutlet weak var noteImageView: UIImageView!
     @IBOutlet weak var notePerSecLabel: UILabel!
     @IBOutlet weak var resultImageView: UIImageView!
     
-    
     // MARK: Functions.
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Default mode.
+        let defaultModeButton = switchers.first!
+        defaultModeButton.isEnabled = false
+        defaultModeButton.tintColor = Resources.selectTint
         
         NotificationCenter.default.addObserver(self, selector: #selector(willEnterForeground(_:)), name: UIApplication.willEnterForegroundNotification, object: nil)
         updateNotePerSecLabel()
@@ -112,5 +116,20 @@ class SightReadingViewController: ViewControllerWithAdMob {
         alert.addAction(okButton)
         alert.addAction(cancelButton)
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func switchButtonTouched(_ sender: UIButton) {
+        let mode = NoteType(rawValue: sender.tag)!
+        
+        // Set color.
+        for button in switchers {
+            button.tintColor = UIColor.black
+            button.isEnabled = true
+        }
+        sender.isEnabled = false
+        sender.tintColor = Resources.selectTint
+        
+        sightReading.changeMode(mode)
+        setUpNewRound()
     }
 }

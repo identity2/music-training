@@ -1,5 +1,7 @@
 import UIKit
 
+enum NoteType: Int { case treble = 0, bass, mixed }
+
 // Generate note or note pairs in different ways.
 class NoteGenerator {
     // MARK: Constants.
@@ -12,18 +14,25 @@ class NoteGenerator {
     static let bassPrefix = "bass_"
     
     // Get a uniformly random note-image pair from the available images.
-    static func getRandomNoteImage(trebleOnly: Bool = false) -> (Note, UIImage) {
+    static func getRandomNoteImage(type: NoteType = .mixed) -> (Note, UIImage) {
         let noteIndex = Int.random(in: 0..<noteRange)
-        let isTreble = trebleOnly ? true : Bool.random()
         
-        let resultNote = getNoteBy(index: noteIndex, isTreble: isTreble)
-        let resultImage = getNoteImageBy(index: noteIndex, isTreble: isTreble)
+        // Ranomize if "mixed".
+        var newType: NoteType
+        if type == .mixed {
+            newType = Bool.random() ? .treble : .bass
+        } else {
+            newType = type
+        }
+
+        let resultNote = getNoteBy(index: noteIndex, type: newType)
+        let resultImage = getNoteImageBy(index: noteIndex, type: newType)
         
         return (resultNote, resultImage)
     }
     
     // Get two random note-image pair from the same octave.
-    static func getTwoRandomNoteImage(avoidSame: Bool, trebleOnly: Bool) -> ((Note, UIImage), (Note, UIImage)) {
+    static func getTwoRandomNoteImage(avoidSame: Bool, type: NoteType) -> ((Note, UIImage), (Note, UIImage)) {
         let noteIndex1 = Int.random(in: 0..<noteRange)
         var noteIndex2: Int
         
@@ -32,19 +41,30 @@ class NoteGenerator {
             noteIndex2 = Int.random(in: 0..<noteRange)
         } while avoidSame && noteIndex2 == noteIndex1
         
-        let isTreble = trebleOnly ? true : Bool.random()
+        // Ranomize if "mixed".
+        var newType: NoteType
+        if type == .mixed {
+            newType = Bool.random() ? .treble : .bass
+        } else {
+            newType = type
+        }
         
-        let resultNote1 = getNoteBy(index: noteIndex1, isTreble: isTreble)
-        let resultNote2 = getNoteBy(index: noteIndex2, isTreble: isTreble)
-        let resultImage1 = getNoteImageBy(index: noteIndex1, isTreble: isTreble)
-        let resultImage2 = getNoteImageBy(index: noteIndex2, isTreble: isTreble)
+        let resultNote1 = getNoteBy(index: noteIndex1, type: newType)
+        let resultNote2 = getNoteBy(index: noteIndex2, type: newType)
+        let resultImage1 = getNoteImageBy(index: noteIndex1, type: newType)
+        let resultImage2 = getNoteImageBy(index: noteIndex2, type: newType)
         
         return ((resultNote1, resultImage1), (resultNote2, resultImage2))
     }
     
-    static func getNoteBy(index: Int, isTreble: Bool) -> Note {
-        var octave = isTreble ? trebleStartOctave : bassStartOctave
-        let startKey = isTreble ? trebleStartNote : bassStartNote
+    static func getNoteBy(index: Int, type: NoteType) -> Note {
+        guard type != .mixed else {
+            print("Type cannot be mixed when calling getNoteBy(index:type:).")
+            return Note()
+        }
+        
+        var octave = (type == .treble ? trebleStartOctave : bassStartOctave)
+        let startKey = (type == .treble ? trebleStartNote : bassStartNote)
         
         // Have to offset the index to the start note (aka. C) of the octave.
         octave = octave + (index + startKey.rawValue) / Note.notesPerOctave
@@ -56,8 +76,13 @@ class NoteGenerator {
         return Note(octave: octave, key: key)
     }
     
-    static func getNoteImageBy(index: Int, isTreble: Bool) -> UIImage {
-        guard let resultImage = UIImage(named: (isTreble ? treblePrefix : bassPrefix) + String(index)) else {
+    static func getNoteImageBy(index: Int, type: NoteType) -> UIImage {
+        guard type != .mixed else {
+            print("Type cannot be mixed when calling getNoteImageBy(index:type:).")
+            return UIImage()
+        }
+        
+        guard let resultImage = UIImage(named: (type == .treble ? treblePrefix : bassPrefix) + String(index)) else {
             print("Error: Cannot get the image from the provided string.")
             return UIImage()
         }

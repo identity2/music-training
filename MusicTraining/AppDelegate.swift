@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         GADMobileAds.configure(withApplicationID: "ca-app-pub-3679599074148025~4038847124")
+        
+        ReviewRequester.incrementRuns()
+        
         return true
     }
 

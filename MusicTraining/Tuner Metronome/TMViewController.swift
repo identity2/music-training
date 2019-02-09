@@ -23,6 +23,8 @@ class TMViewController: ViewControllerWithAdMob {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        ReviewRequester.checkForRequest()
+        
         UIApplication.shared.isIdleTimerDisabled = true
         
         toggleView.addTarget(self, action: #selector(TMViewController.toggleValueChanged(toggleView:)), for: .valueChanged)

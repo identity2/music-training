@@ -5,6 +5,7 @@ class SightReading {
     let answeredNotesKey = "SR_answered_notes"
     let timeSpentKey = "SR_time_spent"
     
+    var currMode = NoteType.treble
     var currNoteImage: UIImage   // Avoid getting the same image twice a row.
     var totalAnsweredNotes: Int
     var totalTimeSpent: Double
@@ -31,13 +32,18 @@ class SightReading {
         
         // Avoid rolling the same image twice in a row.
         repeat {
-            newNote = NoteGenerator.getRandomNoteImage()
+            newNote = NoteGenerator.getRandomNoteImage(type: currMode)
         } while newNote.1 == currNoteImage
         
         correctAnswer = newNote.0.key
         currNoteImage = newNote.1
         
         return currNoteImage
+    }
+    
+    // Switch between treble, bass, or mixed.
+    func changeMode(_ mode: NoteType) {
+        currMode = mode
     }
     
     // Return: (isCorrect, The correct answer).

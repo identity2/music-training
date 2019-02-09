@@ -23,6 +23,21 @@ class SightSingingViewController : ViewControllerWithAdMob, AudioPollerDelegate 
                 
         updateCorrectRateLabel()
         setUpNewRound()
+        
+        if !sightSinging.dontShowPopUp {
+            showPopUpTips()
+        }
+    }
+    
+    func showPopUpTips() {
+        let alert = UIAlertController(title: "Tips", message: "You can sing the note in any octaves.", preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "Don't Show this Again", style: .default, handler: { (action) -> Void in
+            self.sightSinging.dontShowPopUpAgain()
+        })
+        let cancelButton = UIAlertAction(title: "Got it", style: .cancel)
+        alert.addAction(okButton)
+        alert.addAction(cancelButton)
+        self.present(alert, animated: true, completion: nil)
     }
     
     func setUpNewRound() {

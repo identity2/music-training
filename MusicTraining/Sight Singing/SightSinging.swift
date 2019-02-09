@@ -3,11 +3,13 @@ import UIKit
 class SightSinging {
     let answeredKey = "SS_answered_notes"
     let correctKey = "SS_correct_notes"
+    let dontShowPopUpKey = "SS_show_popup"
     let sampleNote = SoundPlayer(named: "A3")
     let avoidNote = Note.Key.A
     
     var totalAnsweredNotes: Int
     var correctNoteCount: Int
+    var dontShowPopUp: Bool
     
     var correctRate: Double {
         get {
@@ -20,6 +22,7 @@ class SightSinging {
     init() {
         totalAnsweredNotes = UserDefaults.standard.integer(forKey: answeredKey)
         correctNoteCount = UserDefaults.standard.integer(forKey: correctKey)
+        dontShowPopUp = UserDefaults.standard.bool(forKey: dontShowPopUpKey)
         
         // These are given arbitrarily to avoid the use of optionals.
         correctAnswer = .A
@@ -35,7 +38,7 @@ class SightSinging {
         
         // Avoid rolling the same image twice in a row, or rolling the sample key.
         repeat {
-            newNote = NoteGenerator.getRandomNoteImage(trebleOnly: true)
+            newNote = NoteGenerator.getRandomNoteImage(type: .treble)
         } while newNote.0.key == correctAnswer || newNote.0.key == avoidNote
         
         correctAnswer = newNote.0.key
@@ -68,5 +71,9 @@ class SightSinging {
     func storeData() {
         UserDefaults.standard.set(totalAnsweredNotes, forKey: answeredKey)
         UserDefaults.standard.set(correctNoteCount, forKey: correctKey)
+    }
+    
+    func dontShowPopUpAgain() {
+        UserDefaults.standard.set(true, forKey: dontShowPopUpKey)
     }
 }

@@ -22,11 +22,6 @@
 		D930D7032205FAA800052A91 /* TMTuner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D7022205FAA800052A91 /* TMTuner.swift */; };
 		D930D7052205FAC100052A91 /* TMPitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D7042205FAC100052A91 /* TMPitch.swift */; };
 		D930D7072205FAD000052A91 /* TMNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D7062205FAD000052A91 /* TMNote.swift */; };
-		D930D7112206E38700052A91 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D7102206E38700052A91 /* TreeNode.swift */; };
-		D930D7132206E3D200052A91 /* Quicksort.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D7122206E3D200052A91 /* Quicksort.swift */; };
-		D930D7152206E6D300052A91 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D7142206E6D300052A91 /* TrieNode.swift */; };
-		D930D7172206E72400052A91 /* Mergesort.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D7162206E72400052A91 /* Mergesort.swift */; };
-		D930D7192206E74E00052A91 /* HashedHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D7182206E74E00052A91 /* HashedHeap.swift */; };
 		D930D71B2207024C00052A91 /* TMToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D71A2207024C00052A91 /* TMToggleView.swift */; };
 		D934015F21CE0D5900F0D3C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934015E21CE0D5900F0D3C4 /* AppDelegate.swift */; };
 		D934016421CE0D5900F0D3C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D934016221CE0D5900F0D3C4 /* Main.storyboard */; };
@@ -37,6 +32,7 @@
 		D97B4A4821D4D7250025BE75 /* NoteGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B4A4721D4D7250025BE75 /* NoteGenerator.swift */; };
 		D97B4A5C21D4F1380025BE75 /* NoteGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B4A5B21D4F1380025BE75 /* NoteGeneratorTests.swift */; };
 		D97DE1C021DB2A060081CABE /* SightReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97DE1BF21DB2A060081CABE /* SightReading.swift */; };
+		D99FA445220EB93800D3C488 /* ReviewRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99FA444220EB93800D3C488 /* ReviewRequester.swift */; };
 		D9CDB4EA2202EFD90043109B /* ChordProgression.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CDB4E92202EFD90043109B /* ChordProgression.swift */; };
 		D9CDB4EC2202FE6F0043109B /* ChordProgressionPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CDB4EB2202FE6F0043109B /* ChordProgressionPlayer.swift */; };
 		D9CDB4F02203286E0043109B /* ViewControllerWithAdMob.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CDB4EF2203286E0043109B /* ViewControllerWithAdMob.swift */; };
@@ -76,11 +72,6 @@
 		D930D7022205FAA800052A91 /* TMTuner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMTuner.swift; sourceTree = "<group>"; };
 		D930D7042205FAC100052A91 /* TMPitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMPitch.swift; sourceTree = "<group>"; };
 		D930D7062205FAD000052A91 /* TMNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMNote.swift; sourceTree = "<group>"; };
-		D930D7102206E38700052A91 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
-		D930D7122206E3D200052A91 /* Quicksort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quicksort.swift; sourceTree = "<group>"; };
-		D930D7142206E6D300052A91 /* TrieNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
-		D930D7162206E72400052A91 /* Mergesort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mergesort.swift; sourceTree = "<group>"; };
-		D930D7182206E74E00052A91 /* HashedHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashedHeap.swift; sourceTree = "<group>"; };
 		D930D71A2207024C00052A91 /* TMToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMToggleView.swift; sourceTree = "<group>"; };
 		D934015B21CE0D5900F0D3C4 /* MusicTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D934015E21CE0D5900F0D3C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +86,7 @@
 		D97B4A5521D4F1170025BE75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D97B4A5B21D4F1380025BE75 /* NoteGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteGeneratorTests.swift; sourceTree = "<group>"; };
 		D97DE1BF21DB2A060081CABE /* SightReading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightReading.swift; sourceTree = "<group>"; };
+		D99FA444220EB93800D3C488 /* ReviewRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequester.swift; sourceTree = "<group>"; };
 		D9CDB4E92202EFD90043109B /* ChordProgression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordProgression.swift; sourceTree = "<group>"; };
 		D9CDB4EB2202FE6F0043109B /* ChordProgressionPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordProgressionPlayer.swift; sourceTree = "<group>"; };
 		D9CDB4EF2203286E0043109B /* ViewControllerWithAdMob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerWithAdMob.swift; sourceTree = "<group>"; };
@@ -159,6 +151,7 @@
 				D9DCEF8621F9C07A00487656 /* AudioPoller.swift */,
 				D9CDB4EB2202FE6F0043109B /* ChordProgressionPlayer.swift */,
 				D9CDB4EF2203286E0043109B /* ViewControllerWithAdMob.swift */,
+				D99FA444220EB93800D3C488 /* ReviewRequester.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -200,18 +193,6 @@
 			path = Interval;
 			sourceTree = "<group>";
 		};
-		D930D70D2206E04000052A91 /* Algorithms */ = {
-			isa = PBXGroup;
-			children = (
-				D930D7102206E38700052A91 /* TreeNode.swift */,
-				D930D7122206E3D200052A91 /* Quicksort.swift */,
-				D930D7142206E6D300052A91 /* TrieNode.swift */,
-				D930D7162206E72400052A91 /* Mergesort.swift */,
-				D930D7182206E74E00052A91 /* HashedHeap.swift */,
-			);
-			path = Algorithms;
-			sourceTree = "<group>";
-		};
 		D934015221CE0D5800F0D3C4 = {
 			isa = PBXGroup;
 			children = (
@@ -235,7 +216,6 @@
 		D934015D21CE0D5900F0D3C4 /* MusicTraining */ = {
 			isa = PBXGroup;
 			children = (
-				D930D70D2206E04000052A91 /* Algorithms */,
 				D930D70C2206DFB700052A91 /* Interval */,
 				D930D70B2206DFB000052A91 /* Chord Progression */,
 				D930D70A2206DFA800052A91 /* Sight Singing */,
@@ -405,8 +385,6 @@
 			files = (
 				D9CDB4EC2202FE6F0043109B /* ChordProgressionPlayer.swift in Sources */,
 				D9DCEF8721F9C07A00487656 /* AudioPoller.swift in Sources */,
-				D930D7172206E72400052A91 /* Mergesort.swift in Sources */,
-				D930D7192206E74E00052A91 /* HashedHeap.swift in Sources */,
 				D930D6FF2205FA6E00052A91 /* Extensions.swift in Sources */,
 				D9D9154F21D1408C0087BC13 /* SightReadingViewController.swift in Sources */,
 				D9D9155721D147730087BC13 /* MenuViewController.swift in Sources */,
@@ -418,17 +396,15 @@
 				D930D6FD2205FA4700052A91 /* TMDigitNoteImages.swift in Sources */,
 				D934015F21CE0D5900F0D3C4 /* AppDelegate.swift in Sources */,
 				D930D6F72205F94C00052A91 /* TMViewController.swift in Sources */,
-				D930D7132206E3D200052A91 /* Quicksort.swift in Sources */,
-				D930D7152206E6D300052A91 /* TrieNode.swift in Sources */,
 				D911952121F1DCC8008F19B0 /* AudioNoteForInterval.swift in Sources */,
 				D930D7072205FAD000052A91 /* TMNote.swift in Sources */,
 				D930D6FB2205F9EA00052A91 /* TMMetronomeAnimationView.swift in Sources */,
 				D97DE1C021DB2A060081CABE /* SightReading.swift in Sources */,
 				D911952321F20AC4008F19B0 /* Resources.swift in Sources */,
-				D930D7112206E38700052A91 /* TreeNode.swift in Sources */,
 				D97B4A4821D4D7250025BE75 /* NoteGenerator.swift in Sources */,
 				D930D7012205FA8300052A91 /* TMTunerView.swift in Sources */,
 				D930D6F92205F9C600052A91 /* TMSmallScreenView.swift in Sources */,
+				D99FA445220EB93800D3C488 /* ReviewRequester.swift in Sources */,
 				D9CDB4EA2202EFD90043109B /* ChordProgression.swift in Sources */,
 				D9D9155121D143410087BC13 /* SightSingingViewController.swift in Sources */,
 				D930D7052205FAC100052A91 /* TMPitch.swift in Sources */,

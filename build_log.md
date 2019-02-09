@@ -37,3 +37,9 @@
 
 **2019.02.04** [Ver: 2.0.1, Build: 6]
 - Make the head of the tuner guy appear when initializing.
+
+**2019.02.09** [Ver: 2.1, Build: 7]
+- Added a "Treble, Bass, Mixed" switch for Sight Reading.
+- Added a "Tips" pop up for Sight Singing.
+- Added a review pop up for the users to review in app.
+- Deleted some unneeded assets.
