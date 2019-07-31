@@ -10,13 +10,22 @@ class TMViewController: ViewControllerWithAdMob {
     @IBOutlet weak var smallScreenView: UIImageView!
     @IBOutlet weak var tempoView: TMSmallScreenView!
     @IBOutlet weak var tunerView: TMTunerView!
+    @IBOutlet weak var noteIconImageView: UIImageView!
+    @IBOutlet weak var rodSoundButton: UIButton!
+    @IBOutlet weak var rockSoundButton: UIButton!
+    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var saveSlot: UIButton!
     
     // MARK: Constants.
     let defaultBPM = 80
     let fastAdjustInterval = 0.2
+    let savedBPMKey = "bmp_saved_key"
     
     // MARK: Properties.
     weak var bpmAdjustTimer: Timer?
+    
+    var isRodSound = true
+    var savedBPM = 0
     
     var currSize: CGSize?
     
@@ -26,6 +35,11 @@ class TMViewController: ViewControllerWithAdMob {
         ReviewRequester.checkForRequest()
         
         UIApplication.shared.isIdleTimerDisabled = true
+        
+        savedBPM = UserDefaults.standard.integer(forKey: savedBPMKey)
+        saveSlot.setTitle("\(savedBPM)", for: .normal)
+        
+        rodSoundButton.tintColor = Resources.selectTint
         
         toggleView.addTarget(self, action: #selector(TMViewController.toggleValueChanged(toggleView:)), for: .valueChanged)
     }
@@ -39,8 +53,8 @@ class TMViewController: ViewControllerWithAdMob {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        startUpTuner()
         shutDownMetronome()
+        startUpTuner()
         
         repositionSubviews()
     }
@@ -104,6 +118,11 @@ class TMViewController: ViewControllerWithAdMob {
         smallScreenView.isHidden = false
         tempoView.isHidden = false
         metronomeView.isHidden = false
+        noteIconImageView.isHidden = false
+        rodSoundButton.isHidden = false
+        rockSoundButton.isHidden = false
+        saveButton.isHidden = false
+        saveSlot.isHidden = (savedBPM == 0)
         
         metronomeView.startMetronome(bpm: tempoView.currTempo)
     }
@@ -114,6 +133,11 @@ class TMViewController: ViewControllerWithAdMob {
         smallScreenView.isHidden = true
         tempoView.isHidden = true
         metronomeView.isHidden = true
+        noteIconImageView.isHidden = true
+        rodSoundButton.isHidden = true
+        rockSoundButton.isHidden = true
+        saveButton.isHidden = true
+        saveSlot.isHidden = true
         
         metronomeView.stopMetronome()
     }
@@ -149,6 +173,38 @@ class TMViewController: ViewControllerWithAdMob {
     @IBAction func backButtonTouched(_ sender: Any) {
         shutDownTuner()
         shutDownMetronome()
+    }
+    
+    @IBAction func saveBMP(_ sender: UIButton) {
+        saveSlot.isHidden = false
+        savedBPM = tempoView.currTempo
+        saveSlot.setTitle("\(savedBPM)", for: .normal)
+        UserDefaults.standard.set(savedBPM, forKey: savedBPMKey)
+    }
+    
+    @IBAction func restoreSavedBPM(_ sender: Any) {
+        tempoView.setValue(value: savedBPM)
+        metronomeView.updateBPM(tempoView.currTempo)
+    }
+    
+    @IBAction func rodSoundButtonPressed(_ sender: UIButton) {
+        if isRodSound { return }
+        
+        metronomeView.switchSound()
+        
+        rockSoundButton.tintColor = UIColor.black
+        rodSoundButton.tintColor = Resources.selectTint
+        isRodSound = true
+    }
+    
+    @IBAction func rockSoundButtonPressed(_ sender: UIButton) {
+        if !isRodSound { return }
+        
+        metronomeView.switchSound()
+        
+        rockSoundButton.tintColor = Resources.selectTint
+        rodSoundButton.tintColor = UIColor.black
+        isRodSound = false
     }
     
 }

@@ -19,7 +19,10 @@ class TMMetronomeAnimationView: UIView {
     let rodAspectRatio = CGFloat(0.15941)
     let eyesMovementXProportionToRodWidth = CGFloat(0.03)
     
-    let soundPlayer = SoundPlayer(named: "metronome_sound")
+    var soundPlayer: SoundPlayer!
+    
+    let rodSoundPlayer = SoundPlayer(named: "metronome_sound")
+    let rockSoundPlayer = SoundPlayer(named: "metronome_sound_rock")
     
     let timerTickInterval = 0.01
     let mouthOpenDuration = 0.1
@@ -31,10 +34,17 @@ class TMMetronomeAnimationView: UIView {
     var sign = 0.0
     var prevTime = 0.0
     
+    var isRodSound = true
+    
     var added = false
     var defaultAnchor = CGPoint(x: 0.5, y: 0.5)
     
     weak var mouthOpenTimer: Timer?
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        soundPlayer = rodSoundPlayer
+    }
     
     // MARK: Function.
     func startMetronome(bpm: Int) {
@@ -47,6 +57,11 @@ class TMMetronomeAnimationView: UIView {
         
         prevTime = Date().timeIntervalSinceReferenceDate
         timer = Timer.scheduledTimer(timeInterval: timerTickInterval, target: self, selector: #selector(TMMetronomeAnimationView.timerTick), userInfo: nil, repeats: true)
+    }
+    
+    func switchSound() {
+        soundPlayer = isRodSound ? rockSoundPlayer : rodSoundPlayer
+        isRodSound = !isRodSound
     }
     
     func stopMetronome() {

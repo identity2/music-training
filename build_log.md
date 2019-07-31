@@ -43,3 +43,9 @@
 - Added a "Tips" pop up for Sight Singing.
 - Added a review pop up for the users to review in app.
 - Deleted some unneeded assets.
+
+**2019.07.31** [Ver: 2.2, Build: 9]
+- Added a "Save Button" for the metronome.
+- Added buttons for metronome to switch between different sounds.
+- Updated to Swift 5.0.
+

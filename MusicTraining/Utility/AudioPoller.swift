@@ -31,7 +31,7 @@ class AudioPoller {
 //        }
         
         AKSettings.audioInputEnabled = true
-        mic = AKMicrophone()
+        mic = AKMicrophone()!
         tracker = AKFrequencyTracker.init(mic)
         silence = AKBooster(tracker, gain: 0)
         

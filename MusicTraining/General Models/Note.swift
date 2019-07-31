@@ -24,8 +24,10 @@ class Note: Equatable, Hashable {
     var key: Key
     var sharp: Bool
     
-    var hashValue: Int {
-        return key.hashValue ^ sharp.hashValue ^ octave.hashValue
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(key)
+        hasher.combine(sharp)
+        hasher.combine(octave)
     }
     
     var frequency: Double {

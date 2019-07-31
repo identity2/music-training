@@ -24,7 +24,7 @@ class TMNote: Equatable {
     var accidental: Accidental
     
     var frequency: Double {
-        let index = TMNote.all.index(of: self)! - TMNote.all.index(of: TMNote(.a, .natural))!
+        let index = TMNote.all.firstIndex(of: self)! - TMNote.all.firstIndex(of: TMNote(.a, .natural))!
         return 440.0 * pow(2.0, Double(index) / 12.0)
     }
     

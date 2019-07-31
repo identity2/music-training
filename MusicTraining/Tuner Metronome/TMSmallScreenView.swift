@@ -39,6 +39,18 @@ class TMSmallScreenView: UIView {
         setDigitsToImageViews()
     }
     
+    func setValue(value: Int) {
+        let originalTempo = currTempo
+        currTempo = value
+        
+        // 2 digit -> 3 digit or 3 digit -> 2 digit.
+        if currTempo >= 100 && originalTempo < 100 || currTempo < 100 && originalTempo >= 100 {
+            recalculateHorizontalPositioning()
+        }
+        
+        setDigitsToImageViews()
+    }
+    
     private func setUpDigitImageSize() {
         let height = frame.height * digitHeightProportionToViewHeight
         let width = height * digitAspectRatio

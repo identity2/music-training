@@ -6,7 +6,7 @@ target 'MusicTraining' do
   use_frameworks!
 
   # Pods for MusicTraining
-  pod 'AudioKit', '~> 4.5'
+  pod 'AudioKit', '~> 4.7'
   pod 'Google-Mobile-Ads-SDK'
 end
 

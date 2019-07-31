@@ -314,6 +314,7 @@
 					};
 					D97B4A5021D4F1170025BE75 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 						TestTargetID = D934015A21CE0D5900F0D3C4;
 					};
 				};
@@ -584,7 +585,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shinerightstudio.tunermetronome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -603,7 +604,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shinerightstudio.tunermetronome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -622,7 +623,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = shinerightstudio.MusicTrainingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicTraining.app/MusicTraining";
 			};
@@ -642,7 +643,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = shinerightstudio.MusicTrainingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicTraining.app/MusicTraining";
 			};

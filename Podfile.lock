@@ -1,14 +1,14 @@
 PODS:
-  - AudioKit (4.5.5):
-    - AudioKit/Core (= 4.5.5)
-    - AudioKit/UI (= 4.5.5)
-  - AudioKit/Core (4.5.5)
-  - AudioKit/UI (4.5.5):
+  - AudioKit (4.8):
+    - AudioKit/Core (= 4.8)
+    - AudioKit/UI (= 4.8)
+  - AudioKit/Core (4.8)
+  - AudioKit/UI (4.8):
     - AudioKit/Core
   - Google-Mobile-Ads-SDK (7.31.0)
 
 DEPENDENCIES:
-  - AudioKit (~> 4.5)
+  - AudioKit (~> 4.7)
   - Google-Mobile-Ads-SDK
 
 SPEC REPOS:
@@ -17,9 +17,9 @@ SPEC REPOS:
     - Google-Mobile-Ads-SDK
 
 SPEC CHECKSUMS:
-  AudioKit: fa163632454ff463d5f02c479e4c1fb99f2c9d44
+  AudioKit: 04ecf14d5ca795b16fc92c76fc84e2421ade7df0
   Google-Mobile-Ads-SDK: 6e529e748b45507a2ca904e0b5a52669ba3920c4
 
-PODFILE CHECKSUM: 5930b5f4e070f5b96093497596698efc73adcb09
+PODFILE CHECKSUM: 247ccb3c3d4fd46b5a76053eaba65c879cb48e96
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.5
